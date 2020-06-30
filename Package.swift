@@ -25,7 +25,9 @@ let package = Package(
             name: "buymeacoffee",
             dependencies: [],
             resources: [
-                .process("Sources/img.pdf")
+                .process("Assets.xcassets"),
+                .process("Cookie-Regular.ttf"),
+                .process("Lato-Regular.ttf")
             ]),
         .testTarget(
             name: "buymeacoffeeTests",

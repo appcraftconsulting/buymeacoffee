@@ -23,27 +23,8 @@ class BMCButton: UIButton {
             
             static let `default`: Self = .orange
             
-            var background: UIColor {
-                switch self {
-                case .orange:
-                    return #colorLiteral(red: 1, green: 0.5059999824, blue: 0.2469999939, alpha: 1)
-                case .yellow:
-                    return #colorLiteral(red: 1, green: 0.8669999838, blue: 0, alpha: 1)
-                case .purple:
-                    return #colorLiteral(red: 0.7409999967, green: 0.3729999959, blue: 1, alpha: 1)
-                case .black:
-                    return #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
-                case .white:
-                    return #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
-                case .blue:
-                    return #colorLiteral(red: 0.3729999959, green: 0.4979999959, blue: 1, alpha: 1)
-                case .green:
-                    return #colorLiteral(red: 0.474999994, green: 0.8389999866, blue: 0.7099999785, alpha: 1)
-                case .red:
-                    return #colorLiteral(red: 1, green: 0.3729999959, blue: 0.3729999959, alpha: 1)
-                case .pink:
-                    return #colorLiteral(red: 0.9570000172, green: 0.4429999888, blue: 1, alpha: 1)
-                }
+            var background: UIColor? {
+                UIColor(named: rawValue, in: .module, compatibleWith: nil)
             }
             
             var title: UIColor {
@@ -61,7 +42,7 @@ class BMCButton: UIButton {
             case lato
             case arial
             
-            static let `default`: Self = .arial
+            static let `default`: Self = .cookie
             
             var value: UIFont? {
                 switch self {
@@ -114,15 +95,6 @@ class BMCButton: UIButton {
         setup()
     }
     
-    override func layoutSubviews() {
-        super.layoutSubviews()
-        
-        let rect = bounds.insetBy(dx: 5, dy: 5)
-        let cornerRadii = CGSize(width: 5, height: 5)
-        let path = UIBezierPath(roundedRect: rect, byRoundingCorners: .allCorners, cornerRadii: cornerRadii)
-        layer.shadowPath = path.cgPath
-    }
-    
     // MARK: - Interface Builder
     
     override func prepareForInterfaceBuilder() {
@@ -141,13 +113,32 @@ class BMCButton: UIButton {
     }
     
     private func setup() {
-        layer.shadowOffset = .init(width: 0, height: 1)
-//        layer.shadowColor = #colorLiteral(red: 0.7450980392, green: 0.7450980392, blue: 0.7450980392, alpha: 0.005).cgColor
+        layer.shadowOffset = .init(width: 5, height: 5)
+        layer.shadowColor = UIColor.black.withAlphaComponent(0.15).cgColor
         layer.shadowOpacity = 1
-        layer.shadowRadius = 1
+        layer.shadowRadius = 2
         layer.cornerRadius = 5
 
-        contentEdgeInsets = .init(top: 7, left: 15, bottom: 7, right: 10)
+        contentEdgeInsets = .init(top: 8, left: 24, bottom: 8, right: 24)
+        titleEdgeInsets = .init(top: 0, left: 6, bottom: 0, right: -6)
+        imageEdgeInsets = .init(top: 0, left: -6, bottom: 0, right: 6)
+        let image = UIImage(named: "bmc", in: .module, compatibleWith: nil)
+        setImage(image, for: .normal)
+        
+        registerFonts()
+        
+        adjustsImageWhenHighlighted = false
+        
         configure(with: configuration)
+    }
+    
+    private func registerFonts() {
+        if let url = Bundle.module.url(forResource: "Cookie-Regular", withExtension: "ttf") {
+            CTFontManagerRegisterFontsForURL(url as CFURL, .process, nil)
+        }
+        
+        if let url = Bundle.module.url(forResource: "Lato-Regular", withExtension: "ttf") {
+            CTFontManagerRegisterFontsForURL(url as CFURL, .process, nil)
+        }
     }
 }
