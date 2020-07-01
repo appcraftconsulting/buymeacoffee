@@ -1,5 +1,5 @@
 # BuyMeACoffee ☕️
-[Buy Me A Coffee](https://www.buymeacoffee.com) framework for iOS.
+[Buy Me a Coffee](https://www.buymeacoffee.com) framework for iOS.
 
 ## Installation
 
