@@ -7,20 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		08823403156940842C47E0A1C5096665 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F6FAAD710B21E6C148AFE3D71B5D50D /* UIKit.framework */; };
-		208000F76ECF20DA9D6BBFB4F9733E66 /* BMCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51BB3690C6AEBC1319D46FE9EDEECD09 /* BMCViewController.swift */; };
-		305436FBBD5CFE5C235F0817E04BF135 /* BMCManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 787CB5892CCEEB01FCB6A65F135CB063 /* BMCManager.swift */; };
-		52DA81FBAC2D460E796CA143C88C7211 /* BMCDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 827359C63009678610E26E60D66CBA39 /* BMCDelegate.swift */; };
-		721EAFE3D7FF92E78C36B7FCBA0825EA /* BMCFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EA55EC68FF2A28E4C804874878BB9F9 /* BMCFont.swift */; };
-		8A025754A2B439E66CBAC1C9B0F7B589 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5817FDC69A6DFC1A5B94E1A32B861315 /* WebKit.framework */; };
-		C6222BB9D134BBEA322247D40B4196A3 /* BMCButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C7245F3BE8C699BC33C4F7700678B58 /* BMCButton.swift */; };
+		076065E0CB4012791F836DAD59C2D08B /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F4A21E32765900916A9B471E75DC8DA /* SystemConfiguration.framework */; };
+		08C98C8E018084D27576FABD1F2E1ED6 /* BMCManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1CDE787B36144D1EF885006252F0221 /* BMCManager.swift */; };
+		262417F819717250D4198B2331724A10 /* Bundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13AB3B393A9405C6B4ADA28AC4E09B37 /* Bundle.swift */; };
+		4ABE2C2CB3BD57FFDEAF3CA28BBFE386 /* BMCDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8A1E538CCF310603200A56FE4B9F2AE /* BMCDelegate.swift */; };
+		54DE334D28243AE3CD0183651B144346 /* BMCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 687AB50E4A12B3BF930546766B1639B4 /* BMCViewController.swift */; };
+		5569EB5BD686D689AA9F1AADF9253E78 /* BuyMeACoffee-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A71EF6826441F07C3484E22EEC431A6E /* BuyMeACoffee-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5F6854BF60FC4F78B891FA4F71C53AB8 /* BMCButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95831E14F317EC792E47D68A1EB20F6C /* BMCButton.swift */; };
+		6CF45301105A480A4D115972CB32C752 /* BuyMeACoffee-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1331593ECAD68BA6D01ACA4C8F5132FB /* BuyMeACoffee-dummy.m */; };
+		8C3DE1A5D415EFF15DD47211E8F906FA /* BMCColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 197AD6A4923A0B5450CB1C5B253465E7 /* BMCColor.swift */; };
+		97C5BB69883FE1313A7156A4ECA71A11 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5817FDC69A6DFC1A5B94E1A32B861315 /* WebKit.framework */; };
 		D25C574F8C1BE30E3202426694798A71 /* Pods-CocoaPodsDemo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 32D50A56175C35160BE7EFD54EB4A5D2 /* Pods-CocoaPodsDemo-dummy.m */; };
-		D7882BA12455CCF0253870470F3EB635 /* BuyMeACoffee-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4FB07670BA96562DB2A77D038632304F /* BuyMeACoffee-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E1712B0D2D404C728359B72F5C1A34A8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C7D751ECD2AEDCA06BF6CAA735D626B /* Foundation.framework */; };
-		E1BB8E45687B7BD315C08F1BB189142B /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F4A21E32765900916A9B471E75DC8DA /* SystemConfiguration.framework */; };
 		E40FC8D5BA6E24B204C9ABBDF364A23E /* Pods-CocoaPodsDemo-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FEC3FB178816072A2B19BF560BF934C /* Pods-CocoaPodsDemo-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E54245DFC632A79B2B40449C982B995C /* BuyMeACoffee-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AF1DC55DFA89BB92D5402E2A474BCDC /* BuyMeACoffee-dummy.m */; };
-		FDA1D6D9565E7BF3416EA1A93A864250 /* BMCColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42DB4AADEF20F142E13D11175CA55159 /* BMCColor.swift */; };
+		E7B28B6DE1E26C3FD424CC0DB1AB9806 /* BMCFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21087B8689F491B84FCB924E30C701CD /* BMCFont.swift */; };
+		E7E3B22943054E8ED10B2A29361B3BE9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C7D751ECD2AEDCA06BF6CAA735D626B /* Foundation.framework */; };
+		F61103E68792B737176C581FEEA831AB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F6FAAD710B21E6C148AFE3D71B5D50D /* UIKit.framework */; };
 		FFD95E24BECBDF66F3CF6604273D9424 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C7D751ECD2AEDCA06BF6CAA735D626B /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
@@ -35,51 +36,41 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1EA55EC68FF2A28E4C804874878BB9F9 /* BMCFont.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BMCFont.swift; path = Sources/BuyMeACoffee/BMCFont.swift; sourceTree = "<group>"; };
+		1331593ECAD68BA6D01ACA4C8F5132FB /* BuyMeACoffee-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "BuyMeACoffee-dummy.m"; sourceTree = "<group>"; };
+		13AB3B393A9405C6B4ADA28AC4E09B37 /* Bundle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Bundle.swift; sourceTree = "<group>"; };
+		191C9CD94AD8198E25FFEB035845F185 /* BuyMeACoffee.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = BuyMeACoffee.debug.xcconfig; sourceTree = "<group>"; };
+		197AD6A4923A0B5450CB1C5B253465E7 /* BMCColor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BMCColor.swift; sourceTree = "<group>"; };
+		21087B8689F491B84FCB924E30C701CD /* BMCFont.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BMCFont.swift; sourceTree = "<group>"; };
 		2A3F470BE8EF1283B73E9E2871F7BE82 /* Pods-CocoaPodsDemo.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-CocoaPodsDemo.modulemap"; sourceTree = "<group>"; };
-		2C53B992F06BF72DBBFE3C8AFADA9ACD /* BuyMeACoffee.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = BuyMeACoffee.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		2C7245F3BE8C699BC33C4F7700678B58 /* BMCButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BMCButton.swift; path = Sources/BuyMeACoffee/BMCButton.swift; sourceTree = "<group>"; };
 		2FEC3FB178816072A2B19BF560BF934C /* Pods-CocoaPodsDemo-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-CocoaPodsDemo-umbrella.h"; sourceTree = "<group>"; };
 		32D50A56175C35160BE7EFD54EB4A5D2 /* Pods-CocoaPodsDemo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CocoaPodsDemo-dummy.m"; sourceTree = "<group>"; };
-		3449132A4E3744E82D74858D54B565CD /* BuyMeACoffee.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = BuyMeACoffee.debug.xcconfig; sourceTree = "<group>"; };
-		3AF1DC55DFA89BB92D5402E2A474BCDC /* BuyMeACoffee-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "BuyMeACoffee-dummy.m"; sourceTree = "<group>"; };
 		3F6FAAD710B21E6C148AFE3D71B5D50D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		42DB4AADEF20F142E13D11175CA55159 /* BMCColor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BMCColor.swift; path = Sources/BuyMeACoffee/BMCColor.swift; sourceTree = "<group>"; };
 		4A2E82CDA5E734E8EDAF5DB9AA021F86 /* Pods-CocoaPodsDemo-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CocoaPodsDemo-Info.plist"; sourceTree = "<group>"; };
-		4BC71353049E7C7B8B330F9ABC347C57 /* BuyMeACoffee-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BuyMeACoffee-prefix.pch"; sourceTree = "<group>"; };
-		4FB07670BA96562DB2A77D038632304F /* BuyMeACoffee-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BuyMeACoffee-umbrella.h"; sourceTree = "<group>"; };
-		51BB3690C6AEBC1319D46FE9EDEECD09 /* BMCViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BMCViewController.swift; path = Sources/BuyMeACoffee/BMCViewController.swift; sourceTree = "<group>"; };
+		4DD65203C1F04DA7B74418DC8107DE4B /* BuyMeACoffee.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = BuyMeACoffee.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		5817FDC69A6DFC1A5B94E1A32B861315 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/WebKit.framework; sourceTree = DEVELOPER_DIR; };
-		69A4F6AC116E5A079C3DB6CC1E3AF7A5 /* BuyMeACoffee-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "BuyMeACoffee-Info.plist"; sourceTree = "<group>"; };
-		787CB5892CCEEB01FCB6A65F135CB063 /* BMCManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BMCManager.swift; path = Sources/BuyMeACoffee/BMCManager.swift; sourceTree = "<group>"; };
+		687AB50E4A12B3BF930546766B1639B4 /* BMCViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BMCViewController.swift; sourceTree = "<group>"; };
+		6C345999170747ED47CB122FB9CDA2D2 /* BuyMeACoffee.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = BuyMeACoffee.release.xcconfig; sourceTree = "<group>"; };
 		8159D142E583F0A11A4469459ED7E8CB /* Pods-CocoaPodsDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CocoaPodsDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		82030F85889DBD7E773DED998A1577EB /* Pods-CocoaPodsDemo-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CocoaPodsDemo-acknowledgements.plist"; sourceTree = "<group>"; };
-		827359C63009678610E26E60D66CBA39 /* BMCDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BMCDelegate.swift; path = Sources/BuyMeACoffee/BMCDelegate.swift; sourceTree = "<group>"; };
 		87FB8A33D9389EDC30DAE5A86D26A1FA /* Pods-CocoaPodsDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CocoaPodsDemo.release.xcconfig"; sourceTree = "<group>"; };
-		98E9B5B22AF0E40A5F713FA5EBB50F71 /* BuyMeACoffee.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = BuyMeACoffee.modulemap; sourceTree = "<group>"; };
+		95831E14F317EC792E47D68A1EB20F6C /* BMCButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BMCButton.swift; sourceTree = "<group>"; };
 		9C7D751ECD2AEDCA06BF6CAA735D626B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9F4A21E32765900916A9B471E75DC8DA /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
+		A71EF6826441F07C3484E22EEC431A6E /* BuyMeACoffee-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BuyMeACoffee-umbrella.h"; sourceTree = "<group>"; };
 		AD5DD2EA34018B8049881442C1A1F52B /* Pods_CocoaPodsDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_CocoaPodsDemo.framework; path = "Pods-CocoaPodsDemo.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		BB5974F0220F6C110F36B05278029A34 /* BuyMeACoffee.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = BuyMeACoffee.release.xcconfig; sourceTree = "<group>"; };
+		B55E91995650A2EBF4E8F69A6A61BA32 /* BuyMeACoffee-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BuyMeACoffee-prefix.pch"; sourceTree = "<group>"; };
 		BC1C1964B1902BE853F59F1FD8C59ECC /* Pods-CocoaPodsDemo-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CocoaPodsDemo-acknowledgements.markdown"; sourceTree = "<group>"; };
+		C1CDE787B36144D1EF885006252F0221 /* BMCManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BMCManager.swift; sourceTree = "<group>"; };
 		C997FA64B8071B193EB3FAE46B4309E2 /* BuyMeACoffee.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = BuyMeACoffee.framework; path = BuyMeACoffee.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		EE1D0EC7AE519912D6656491E2CCAB95 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		C9E69B166412F5FE8D8F8645E3309ECE /* BuyMeACoffee-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "BuyMeACoffee-Info.plist"; sourceTree = "<group>"; };
+		DE2511CAE2FBAB19EA2EA7EAA768B7A5 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		DF28A9ED0E5C288DA4BC497FA7FFF82A /* BuyMeACoffee.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = BuyMeACoffee.modulemap; sourceTree = "<group>"; };
+		E8A1E538CCF310603200A56FE4B9F2AE /* BMCDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BMCDelegate.swift; sourceTree = "<group>"; };
 		FB85E206EFE121CD58AD19AF4C16AFBB /* Pods-CocoaPodsDemo-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CocoaPodsDemo-frameworks.sh"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		5AAC10B94F54364CC3A3D431D1FBA6BF /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E1712B0D2D404C728359B72F5C1A34A8 /* Foundation.framework in Frameworks */,
-				E1BB8E45687B7BD315C08F1BB189142B /* SystemConfiguration.framework in Frameworks */,
-				08823403156940842C47E0A1C5096665 /* UIKit.framework in Frameworks */,
-				8A025754A2B439E66CBAC1C9B0F7B589 /* WebKit.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		9B4D9EBB092465535EF52BD3EF768994 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -88,32 +79,77 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D21470A2CBEF5A120DB19690367D090C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E7E3B22943054E8ED10B2A29361B3BE9 /* Foundation.framework in Frameworks */,
+				076065E0CB4012791F836DAD59C2D08B /* SystemConfiguration.framework in Frameworks */,
+				F61103E68792B737176C581FEEA831AB /* UIKit.framework in Frameworks */,
+				97C5BB69883FE1313A7156A4ECA71A11 /* WebKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		12C2191849C443DC3B9E4A627CA3D2D2 /* BuyMeACoffee */ = {
+		0245550B50CAE376E3079A7287163383 /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				2C7245F3BE8C699BC33C4F7700678B58 /* BMCButton.swift */,
-				42DB4AADEF20F142E13D11175CA55159 /* BMCColor.swift */,
-				827359C63009678610E26E60D66CBA39 /* BMCDelegate.swift */,
-				1EA55EC68FF2A28E4C804874878BB9F9 /* BMCFont.swift */,
-				787CB5892CCEEB01FCB6A65F135CB063 /* BMCManager.swift */,
-				51BB3690C6AEBC1319D46FE9EDEECD09 /* BMCViewController.swift */,
-				15F3DE31F9D342D0D2D928A07017F260 /* Pod */,
-				ADB4B6C4AC8CE31B9ABF4A86DC78D8A7 /* Support Files */,
+				4DD65203C1F04DA7B74418DC8107DE4B /* BuyMeACoffee.podspec */,
+				DE2511CAE2FBAB19EA2EA7EAA768B7A5 /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		12CF92AA86C302A78D6E6185F4F9C38B /* BuyMeACoffee */ = {
+			isa = PBXGroup;
+			children = (
+				95831E14F317EC792E47D68A1EB20F6C /* BMCButton.swift */,
+				197AD6A4923A0B5450CB1C5B253465E7 /* BMCColor.swift */,
+				E8A1E538CCF310603200A56FE4B9F2AE /* BMCDelegate.swift */,
+				21087B8689F491B84FCB924E30C701CD /* BMCFont.swift */,
+				C1CDE787B36144D1EF885006252F0221 /* BMCManager.swift */,
+				687AB50E4A12B3BF930546766B1639B4 /* BMCViewController.swift */,
+			);
+			name = BuyMeACoffee;
+			path = BuyMeACoffee;
+			sourceTree = "<group>";
+		};
+		5A4412AB03CA61FA9ADC3034EF8F3D66 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				DF28A9ED0E5C288DA4BC497FA7FFF82A /* BuyMeACoffee.modulemap */,
+				1331593ECAD68BA6D01ACA4C8F5132FB /* BuyMeACoffee-dummy.m */,
+				C9E69B166412F5FE8D8F8645E3309ECE /* BuyMeACoffee-Info.plist */,
+				B55E91995650A2EBF4E8F69A6A61BA32 /* BuyMeACoffee-prefix.pch */,
+				A71EF6826441F07C3484E22EEC431A6E /* BuyMeACoffee-umbrella.h */,
+				191C9CD94AD8198E25FFEB035845F185 /* BuyMeACoffee.debug.xcconfig */,
+				6C345999170747ED47CB122FB9CDA2D2 /* BuyMeACoffee.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "Pods/Target Support Files/BuyMeACoffee";
+			sourceTree = "<group>";
+		};
+		5F8A183EA723E596A063C5D2BA598E3F /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				12CF92AA86C302A78D6E6185F4F9C38B /* BuyMeACoffee */,
+			);
+			name = Sources;
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		62E3633E1DF8013555FA07C8C7211D68 /* BuyMeACoffee */ = {
+			isa = PBXGroup;
+			children = (
+				13AB3B393A9405C6B4ADA28AC4E09B37 /* Bundle.swift */,
+				0245550B50CAE376E3079A7287163383 /* Pod */,
+				5F8A183EA723E596A063C5D2BA598E3F /* Sources */,
+				5A4412AB03CA61FA9ADC3034EF8F3D66 /* Support Files */,
 			);
 			name = BuyMeACoffee;
 			path = ..;
-			sourceTree = "<group>";
-		};
-		15F3DE31F9D342D0D2D928A07017F260 /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				2C53B992F06BF72DBBFE3C8AFADA9ACD /* BuyMeACoffee.podspec */,
-				EE1D0EC7AE519912D6656491E2CCAB95 /* README.md */,
-			);
-			name = Pod;
 			sourceTree = "<group>";
 		};
 		7C413179938210E84E244E3848987CEE /* iOS */ = {
@@ -135,25 +171,10 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		ADB4B6C4AC8CE31B9ABF4A86DC78D8A7 /* Support Files */ = {
+		8EF54F15C4F6B62139D244C0817A25D8 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				98E9B5B22AF0E40A5F713FA5EBB50F71 /* BuyMeACoffee.modulemap */,
-				3AF1DC55DFA89BB92D5402E2A474BCDC /* BuyMeACoffee-dummy.m */,
-				69A4F6AC116E5A079C3DB6CC1E3AF7A5 /* BuyMeACoffee-Info.plist */,
-				4BC71353049E7C7B8B330F9ABC347C57 /* BuyMeACoffee-prefix.pch */,
-				4FB07670BA96562DB2A77D038632304F /* BuyMeACoffee-umbrella.h */,
-				3449132A4E3744E82D74858D54B565CD /* BuyMeACoffee.debug.xcconfig */,
-				BB5974F0220F6C110F36B05278029A34 /* BuyMeACoffee.release.xcconfig */,
-			);
-			name = "Support Files";
-			path = "Pods/Target Support Files/BuyMeACoffee";
-			sourceTree = "<group>";
-		};
-		B9ED46583F0420759CED15029D555F53 /* Development Pods */ = {
-			isa = PBXGroup;
-			children = (
-				12C2191849C443DC3B9E4A627CA3D2D2 /* BuyMeACoffee */,
+				62E3633E1DF8013555FA07C8C7211D68 /* BuyMeACoffee */,
 			);
 			name = "Development Pods";
 			sourceTree = "<group>";
@@ -170,7 +191,7 @@
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				B9ED46583F0420759CED15029D555F53 /* Development Pods */,
+				8EF54F15C4F6B62139D244C0817A25D8 /* Development Pods */,
 				BA4F31F07263C99FC76E66D632A59F09 /* Frameworks */,
 				EADEBFA05E2A75F8228C95CDDA167FD5 /* Products */,
 				877F919036AB161B54E86B04396BBB31 /* Targets Support Files */,
@@ -206,6 +227,14 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		B923766BC1C9E5DC2F34A6ED151830D6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5569EB5BD686D689AA9F1AADF9253E78 /* BuyMeACoffee-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C89A9CC63F1FAB36F826B4AE4FC86C13 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -214,25 +243,17 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D1FC8CD68EC7251B2101C15405CEDDD6 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D7882BA12455CCF0253870470F3EB635 /* BuyMeACoffee-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		D895979B1EDF9025A566472C06CA90D6 /* BuyMeACoffee */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7ED892BF2E799CDEAAFC3B740F245D30 /* Build configuration list for PBXNativeTarget "BuyMeACoffee" */;
+			buildConfigurationList = 8E48C63A45170360F99DA2D21BE3309F /* Build configuration list for PBXNativeTarget "BuyMeACoffee" */;
 			buildPhases = (
-				D1FC8CD68EC7251B2101C15405CEDDD6 /* Headers */,
-				A765FBAD0A5F11E5B917F214C4C60B86 /* Sources */,
-				5AAC10B94F54364CC3A3D431D1FBA6BF /* Frameworks */,
-				C1451B9D65E6F3BB1C1662F5ECB962CB /* Resources */,
+				B923766BC1C9E5DC2F34A6ED151830D6 /* Headers */,
+				E2C0262A9EA56FCE98B2E68F0796CCB6 /* Sources */,
+				D21470A2CBEF5A120DB19690367D090C /* Frameworks */,
+				60CAA418A8E906BCE41DA07048AD9A92 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -298,7 +319,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C1451B9D65E6F3BB1C1662F5ECB962CB /* Resources */ = {
+		60CAA418A8E906BCE41DA07048AD9A92 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -308,25 +329,26 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		A765FBAD0A5F11E5B917F214C4C60B86 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C6222BB9D134BBEA322247D40B4196A3 /* BMCButton.swift in Sources */,
-				FDA1D6D9565E7BF3416EA1A93A864250 /* BMCColor.swift in Sources */,
-				52DA81FBAC2D460E796CA143C88C7211 /* BMCDelegate.swift in Sources */,
-				721EAFE3D7FF92E78C36B7FCBA0825EA /* BMCFont.swift in Sources */,
-				305436FBBD5CFE5C235F0817E04BF135 /* BMCManager.swift in Sources */,
-				208000F76ECF20DA9D6BBFB4F9733E66 /* BMCViewController.swift in Sources */,
-				E54245DFC632A79B2B40449C982B995C /* BuyMeACoffee-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		A91C842E079198A90BF77C3D0F8501AF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				D25C574F8C1BE30E3202426694798A71 /* Pods-CocoaPodsDemo-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E2C0262A9EA56FCE98B2E68F0796CCB6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F6854BF60FC4F78B891FA4F71C53AB8 /* BMCButton.swift in Sources */,
+				8C3DE1A5D415EFF15DD47211E8F906FA /* BMCColor.swift in Sources */,
+				4ABE2C2CB3BD57FFDEAF3CA28BBFE386 /* BMCDelegate.swift in Sources */,
+				E7B28B6DE1E26C3FD424CC0DB1AB9806 /* BMCFont.swift in Sources */,
+				08C98C8E018084D27576FABD1F2E1ED6 /* BMCManager.swift in Sources */,
+				54DE334D28243AE3CD0183651B144346 /* BMCViewController.swift in Sources */,
+				262417F819717250D4198B2331724A10 /* Bundle.swift in Sources */,
+				6CF45301105A480A4D115972CB32C752 /* BuyMeACoffee-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -401,42 +423,6 @@
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Release;
-		};
-		61B6C8298D4BAD7841509806E8FAD0A2 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3449132A4E3744E82D74858D54B565CD /* BuyMeACoffee.debug.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/BuyMeACoffee/BuyMeACoffee-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/BuyMeACoffee/BuyMeACoffee-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/BuyMeACoffee/BuyMeACoffee.modulemap";
-				PRODUCT_MODULE_NAME = BuyMeACoffee;
-				PRODUCT_NAME = BuyMeACoffee;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
 		};
 		6514C364FF96DAD38CD5153C968F20AC /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -515,9 +501,9 @@
 			};
 			name = Debug;
 		};
-		CE8A79FBC1D1EE6FF69D2226D6AF75D6 /* Release */ = {
+		C2833483247604E487F62115CCD99BA0 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BB5974F0220F6C110F36B05278029A34 /* BuyMeACoffee.release.xcconfig */;
+			baseConfigurationReference = 6C345999170747ED47CB122FB9CDA2D2 /* BuyMeACoffee.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
@@ -616,6 +602,42 @@
 			};
 			name = Debug;
 		};
+		E86E5CBFB7A8E320820E1594B8ACAF35 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 191C9CD94AD8198E25FFEB035845F185 /* BuyMeACoffee.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/BuyMeACoffee/BuyMeACoffee-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/BuyMeACoffee/BuyMeACoffee-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/BuyMeACoffee/BuyMeACoffee.modulemap";
+				PRODUCT_MODULE_NAME = BuyMeACoffee;
+				PRODUCT_NAME = BuyMeACoffee;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -628,20 +650,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7ED892BF2E799CDEAAFC3B740F245D30 /* Build configuration list for PBXNativeTarget "BuyMeACoffee" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				61B6C8298D4BAD7841509806E8FAD0A2 /* Debug */,
-				CE8A79FBC1D1EE6FF69D2226D6AF75D6 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		866E33EC2C155D5AE05F04ED5D3EF1F2 /* Build configuration list for PBXNativeTarget "Pods-CocoaPodsDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9DE6FBF51A9734318B1C60475A35CEFB /* Debug */,
 				6514C364FF96DAD38CD5153C968F20AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8E48C63A45170360F99DA2D21BE3309F /* Build configuration list for PBXNativeTarget "BuyMeACoffee" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E86E5CBFB7A8E320820E1594B8ACAF35 /* Debug */,
+				C2833483247604E487F62115CCD99BA0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

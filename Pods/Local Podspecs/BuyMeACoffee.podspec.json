@@ -17,7 +17,10 @@
     "ios": "11.0",
     "osx": "10.10"
   },
-  "source_files": "Sources/**/*.swift",
+  "source_files": [
+    "Sources/**/*.swift",
+    "Bundle.swift"
+  ],
   "frameworks": "SystemConfiguration",
   "ios": {
     "frameworks": [

@@ -8,6 +8,6 @@
 
 import Foundation
 
-extension Bundle {
+internal extension Bundle {
     static let module = Bundle(for: BMCManager.self)
 }
