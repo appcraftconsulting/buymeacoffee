@@ -20,12 +20,12 @@ class ViewController: UIViewController, BMCDelegate {
     
     // MARK: - BMCDelegate
     
-    func bmcViewControllerDidCancel(_ bcmViewController: BMCViewController) {
-        bcmViewController.dismiss(animated: true, completion: nil)
+    func bmcViewControllerDidCancel(_ bmcViewController: BMCViewController) {
+        bmcViewController.dismiss(animated: true, completion: nil)
     }
     
-    func bmcViewControllerDidSucceed(_ bcmViewController: BMCViewController) {
-        bcmViewController.dismiss(animated: true, completion: nil)
+    func bmcViewControllerDidSucceed(_ bmcViewController: BMCViewController) {
+        bmcViewController.dismiss(animated: true, completion: nil)
     }
 }
 
