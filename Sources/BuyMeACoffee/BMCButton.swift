@@ -5,7 +5,9 @@
 //  Copyright © 2020 App Craft Studio. All rights reserved.
 //
 
+#if canImport(UIKit)
 import UIKit
+#endif
 
 @IBDesignable
 public class BMCButton: UIButton {

@@ -5,7 +5,10 @@
 //  Copyright © 2020 App Craft Studio. All rights reserved.
 //
 
+#if canImport(UIKit)
 import UIKit
+#endif
+
 import WebKit
 
 public class BMCViewController: UIViewController, WKNavigationDelegate, WKUIDelegate {
