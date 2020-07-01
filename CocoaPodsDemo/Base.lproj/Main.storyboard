@@ -16,8 +16,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xkk-h6-fkH" customClass="BMCButton" customModule="BuyMeACoffee">
-                                <rect key="frame" x="117" y="424" width="180" height="48"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xkk-h6-fkH" customClass="BMCButton" customModule="BuyMeACoffee">
+                                <rect key="frame" x="105" y="422" width="204" height="52"/>
                                 <state key="normal" title="Button"/>
                             </button>
                         </subviews>
@@ -36,7 +36,7 @@
     </scenes>
     <designables>
         <designable name="xkk-h6-fkH">
-            <size key="intrinsicContentSize" width="180" height="48"/>
+            <size key="intrinsicContentSize" width="204" height="52"/>
         </designable>
     </designables>
     <resources>

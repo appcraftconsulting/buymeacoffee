@@ -2,7 +2,6 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17132" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="rdp-Yn-0of">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17105"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -28,7 +27,7 @@
         <!--View Controller-->
         <scene sceneID="HUp-XO-UhM">
             <objects>
-                <viewController id="5N2-8g-lid" customClass="BMCViewController" customModule="BuyMeACoffee" sceneMemberID="viewController">
+                <viewController id="5N2-8g-lid" customClass="BMCViewController" customModule="BuyMeACoffee" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="67X-6R-wKQ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -52,8 +51,16 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="tuM-zf-yJp">
-                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="UQJ-qh-Nvi"/>
-                        <barButtonItem key="rightBarButtonItem" systemItem="refresh" id="hCg-oo-zdt"/>
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="UQJ-qh-Nvi">
+                            <connections>
+                                <action selector="cancel" destination="5N2-8g-lid" id="SQC-cH-zs3"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="refresh" id="hCg-oo-zdt">
+                            <connections>
+                                <action selector="reload" destination="5N2-8g-lid" id="4VF-je-tp9"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="webView" destination="MzD-qm-QOn" id="Byl-MV-I1i"/>

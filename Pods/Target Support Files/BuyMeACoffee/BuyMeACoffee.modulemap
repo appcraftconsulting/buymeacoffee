@@ -1,0 +1,6 @@
+framework module BuyMeACoffee {
+  umbrella header "BuyMeACoffee-umbrella.h"
+
+  export *
+  module * { export * }
+}

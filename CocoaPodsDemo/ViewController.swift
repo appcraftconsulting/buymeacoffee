@@ -6,14 +6,25 @@
 //
 
 import BuyMeACoffee
+import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, BMCDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        BMCManager.shared.presentingViewController = self
+        BMCManager.shared.delegate = self
     }
-
-
+    
+    // MARK: - BMCDelegate
+    
+    func bmcViewControllerDidCancel(_ bcmViewController: BMCViewController) {
+        bcmViewController.dismiss(animated: true, completion: nil)
+    }
+    
+    func bmcViewControllerDidSucceed(_ bcmViewController: BMCViewController) {
+        bcmViewController.dismiss(animated: true, completion: nil)
+    }
 }
 

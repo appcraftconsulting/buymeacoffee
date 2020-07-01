@@ -38,5 +38,5 @@ public final class BMCManager: NSObject {
 }
 
 extension Bundle {
-    static let module = Bundle.main
+    static let module = Bundle(for: BMCManager.self)
 }

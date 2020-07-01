@@ -12,23 +12,24 @@
   "source": {
     "git": "https://github.com/appcraftstudio/buymeacoffee.git"
   },
-  "swift_versions": "4.0",
+  "swift_versions": "5.0",
   "platforms": {
     "ios": "11.0",
     "osx": "10.10"
   },
-  "source_files": "Sources/*.swift",
+  "source_files": "Sources/**/*.swift",
+  "frameworks": "SystemConfiguration",
   "ios": {
-    "source_files": [
-      "Reachability/ios/*.swift",
-      "Reachability/extensions/*.swift"
-    ],
-    "frameworks": "UIKit"
+    "frameworks": [
+      "UIKit",
+      "WebKit"
+    ]
   },
   "osx": {
-    "source_files": "Reachability/osx/*.swift",
-    "frameworks": "AppKit"
+    "frameworks": [
+      "AppKit",
+      "WebKit"
+    ]
   },
-  "frameworks": "SystemConfiguration",
-  "swift_version": "4.0"
+  "swift_version": "5.0"
 }
