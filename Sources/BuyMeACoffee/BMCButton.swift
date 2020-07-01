@@ -8,62 +8,13 @@
 import UIKit
 
 @IBDesignable
-class BMCButton: UIButton {
+public class BMCButton: UIButton {
     struct Configuration {
-        enum Color: String {
-            case orange
-            case yellow
-            case purple
-            case black
-            case white
-            case blue
-            case green
-            case red
-            case pink
-            
-            static let `default`: Self = .orange
-            
-            var background: UIColor? {
-                UIColor(named: rawValue, in: .module, compatibleWith: nil)
-            }
-            
-            var title: UIColor {
-                switch self {
-                case .orange, .purple, .black, .blue, .green, .red, .pink:
-                    return .white
-                case .yellow, .white:
-                    return .black
-                }
-            }
-        }
-        
-        enum Font {
-            case cookie
-            case lato
-            case arial
-            
-            static let `default`: Self = .cookie
-            
-            var value: UIFont? {
-                switch self {
-                case .cookie:
-                    return UIFont(name: "Cookie", size: 28)
-                case .lato:
-                    return UIFont(name: "Lato", size: 20)
-                case .arial:
-                    return UIFont(name: "Arial", size: 20)
-                }
-            }
-        }
-        
-        var color: Color = .default
-        var font: Font = .default
+        var color: BMCColor = .default
+        var font: BMCFont = .default
         var title: String = "Buy me a coffee"
         var username: String = "appcraftstudio"
     }
-    
-    var presentingViewController: UIViewController?
-    var delegate: BMCButtonDelegate?
     
     var configuration = Configuration() {
         didSet {
@@ -71,7 +22,7 @@ class BMCButton: UIButton {
         }
     }
     
-    override var isHighlighted: Bool {
+    public override var isHighlighted: Bool {
         didSet {
             alpha = isHighlighted ? 0.85 : 1
         }
@@ -97,10 +48,10 @@ class BMCButton: UIButton {
     
     // MARK: - Interface Builder
     
-    override func prepareForInterfaceBuilder() {
+    public override func prepareForInterfaceBuilder() {
         super.prepareForInterfaceBuilder()
         
-        configure(with: configuration)
+        setup()
     }
     
     // MARK: - Private functions
@@ -128,6 +79,8 @@ class BMCButton: UIButton {
         registerFonts()
         
         adjustsImageWhenHighlighted = false
+        
+        addTarget(BMCManager.shared, action: #selector(BMCManager.shared.present), for: .touchUpInside)
         
         configure(with: configuration)
     }

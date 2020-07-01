@@ -1,4 +1,4 @@
-# buymeacoffee
+# BuyMeACoffee
 Buy Me A Coffee framework for iOS
 
 {{< rawhtml >}}

@@ -1,7 +1,7 @@
 import XCTest
-@testable import buymeacoffee
+@testable import BuyMeACoffee
 
-final class buymeacoffeeTests: XCTestCase {
+final class BuyMeACoffeeTests: XCTestCase {
     func testExample() {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct
