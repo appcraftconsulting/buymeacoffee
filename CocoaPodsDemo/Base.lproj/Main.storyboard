@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17132" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="vx8-gY-n1Y">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17132" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="OtA-o6-S9p">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17105"/>
@@ -7,6 +7,22 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="nqp-h7-w82">
+            <objects>
+                <navigationController id="OtA-o6-S9p" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="3Br-xc-dW8">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="vx8-gY-n1Y" kind="relationship" relationship="rootViewController" id="p0x-vf-szR"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Gl3-mE-3TS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1683" y="102"/>
+        </scene>
         <!--Table View Controller-->
         <scene sceneID="fcT-em-I8N">
             <objects>
@@ -17,14 +33,14 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="button-cell" id="u9K-Df-eC3" customClass="ButtonTableViewCell" customModule="CocoaPodsDemo" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="414" height="74"/>
+                                <rect key="frame" x="0.0" y="28" width="414" height="59"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="u9K-Df-eC3" id="uSc-my-E3r">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="74"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="59"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5wX-Qt-Om4" customClass="BMCButton" customModule="BuyMeACoffee">
-                                            <rect key="frame" x="20" y="11" width="374" height="52"/>
+                                            <rect key="frame" x="20" y="11" width="374" height="37"/>
                                             <state key="normal" title="Button"/>
                                         </button>
                                     </subviews>
@@ -45,6 +61,7 @@
                             <outlet property="delegate" destination="vx8-gY-n1Y" id="raL-OL-Wne"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" id="Isa-vj-dlZ"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sth-vc-bRF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -53,7 +70,7 @@
     </scenes>
     <designables>
         <designable name="5wX-Qt-Om4">
-            <size key="intrinsicContentSize" width="204" height="52"/>
+            <size key="intrinsicContentSize" width="172" height="37"/>
         </designable>
     </designables>
     <resources>
