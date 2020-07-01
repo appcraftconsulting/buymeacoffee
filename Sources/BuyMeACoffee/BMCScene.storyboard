@@ -53,11 +53,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="tuM-zf-yJp">
                         <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="UQJ-qh-Nvi"/>
-                        <barButtonItem key="rightBarButtonItem" systemItem="refresh" id="hCg-oo-zdt">
-                            <connections>
-                                <action selector="reload:" destination="MzD-qm-QOn" id="VSc-Fo-Cfi"/>
-                            </connections>
-                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="refresh" id="hCg-oo-zdt"/>
                     </navigationItem>
                     <connections>
                         <outlet property="webView" destination="MzD-qm-QOn" id="Byl-MV-I1i"/>

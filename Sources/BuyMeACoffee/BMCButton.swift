@@ -9,14 +9,21 @@ import UIKit
 
 @IBDesignable
 public class BMCButton: UIButton {
-    struct Configuration {
-        var color: BMCColor = .default
-        var font: BMCFont = .default
-        var title: String = "Buy me a coffee"
-        var username: String = "appcraftstudio"
+    public struct Configuration {
+        let color: BMCColor
+        let font: BMCFont
+        let title: String
+        
+        public init(color: BMCColor, font: BMCFont, title: String = "Buy me a coffee") {
+            self.color = color
+            self.font = font
+            self.title = title
+        }
+        
+        public static let `default`: Self = .init(color: .default, font: .default)
     }
     
-    var configuration = Configuration() {
+    public var configuration: Configuration = .default {
         didSet {
             configure(with: configuration)
         }
@@ -56,23 +63,17 @@ public class BMCButton: UIButton {
     
     // MARK: - Private functions
     
-    private func configure(with configuration: Configuration) {
-        titleLabel?.font = configuration.font.value
-        setTitle(configuration.title, for: .normal)
-        setTitleColor(configuration.color.title, for: .normal)
-        backgroundColor = configuration.color.background
-    }
-    
     private func setup() {
-        layer.shadowOffset = .init(width: 5, height: 5)
-        layer.shadowColor = UIColor.black.withAlphaComponent(0.15).cgColor
-        layer.shadowOpacity = 1
+        layer.shadowOffset = .init(width: 4, height: 4)
+        layer.shadowColor = UIColor.black.cgColor
+        layer.shadowOpacity = 0.1
         layer.shadowRadius = 2
         layer.cornerRadius = 5
 
         contentEdgeInsets = .init(top: 8, left: 24, bottom: 8, right: 24)
         titleEdgeInsets = .init(top: 0, left: 6, bottom: 0, right: -6)
         imageEdgeInsets = .init(top: 0, left: -6, bottom: 0, right: 6)
+        
         let image = UIImage(named: "bmc", in: .module, compatibleWith: nil)
         setImage(image, for: .normal)
         
@@ -80,9 +81,16 @@ public class BMCButton: UIButton {
         
         adjustsImageWhenHighlighted = false
         
-        addTarget(BMCManager.shared, action: #selector(BMCManager.shared.present), for: .touchUpInside)
+        addTarget(BMCManager.shared, action: #selector(BMCManager.shared.start), for: .touchUpInside)
         
         configure(with: configuration)
+    }
+    
+    private func configure(with configuration: Configuration) {
+        titleLabel?.font = configuration.font.value
+        setTitle(configuration.title, for: .normal)
+        setTitleColor(configuration.color.title, for: .normal)
+        backgroundColor = configuration.color.background
     }
     
     private func registerFonts() {

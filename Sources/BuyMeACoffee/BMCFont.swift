@@ -7,14 +7,14 @@
 
 import UIKit
 
-enum BMCFont {
+public enum BMCFont {
     case cookie
     case lato
     case arial
     
-    static let `default`: Self = .cookie
+    public static let `default`: Self = .cookie
     
-    var value: UIFont? {
+    internal var value: UIFont? {
         switch self {
         case .cookie:
             return UIFont(name: "Cookie", size: 28)

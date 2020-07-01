@@ -8,14 +8,14 @@
 import UIKit
 import WebKit
 
-internal class BMCViewController: UIViewController, WKNavigationDelegate, WKUIDelegate {
+public class BMCViewController: UIViewController, WKNavigationDelegate, WKUIDelegate {
     @IBOutlet private weak var webView: WKWebView!
         
     private var url: URL? {
         URL(string: "https://www.buymeacoffee.com/".appending(BMCManager.shared.username))
     }
     
-    override func viewDidLoad() {
+    public override func viewDidLoad() {
         super.viewDidLoad()
                 
         webView.navigationDelegate = self
@@ -28,9 +28,9 @@ internal class BMCViewController: UIViewController, WKNavigationDelegate, WKUIDe
     
     // MARK: - WKNavigationDelegate
     
-    func webView(_ webView: WKWebView, decidePolicyFor navigationAction: WKNavigationAction, decisionHandler: @escaping (WKNavigationActionPolicy) -> Void) {
+    public func webView(_ webView: WKWebView, decidePolicyFor navigationAction: WKNavigationAction, decisionHandler: @escaping (WKNavigationActionPolicy) -> Void) {
         if navigationAction.request.url == url, navigationAction.navigationType == .linkActivated {
-            dismiss(animated: true, completion: nil)
+            BMCManager.shared.delegate?.bmcViewControllerDidSucceed(self)
             decisionHandler(.cancel)
         } else {
             decisionHandler(.allow)
@@ -40,7 +40,7 @@ internal class BMCViewController: UIViewController, WKNavigationDelegate, WKUIDe
     // MARK: - Interface Builder
     
     @IBAction private func cancel() {
-        dismiss(animated: true, completion: nil)
+        BMCManager.shared.delegate?.bmcViewControllerDidCancel(self)
     }
     
     @IBAction private func reload() {

@@ -7,7 +7,7 @@
 
 import UIKit
 
-enum BMCColor: String {
+public enum BMCColor: String {
     case orange
     case yellow
     case purple
@@ -18,13 +18,13 @@ enum BMCColor: String {
     case red
     case pink
     
-    static let `default`: Self = .orange
+    public static let `default`: Self = .orange
     
-    var background: UIColor? {
+    internal var background: UIColor? {
         UIColor(named: rawValue, in: .module, compatibleWith: nil)
     }
     
-    var title: UIColor {
+    internal var title: UIColor {
         switch self {
         case .orange, .purple, .black, .blue, .green, .red, .pink:
             return .white
