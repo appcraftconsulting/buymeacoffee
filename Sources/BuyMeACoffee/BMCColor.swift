@@ -7,7 +7,7 @@
 
 import UIKit
 
-public enum BMCColor: String {
+public enum BMCColor: String, CaseIterable {
     case orange
     case yellow
     case purple

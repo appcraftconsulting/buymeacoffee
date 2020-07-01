@@ -7,7 +7,7 @@
 
 import UIKit
 
-public enum BMCFont {
+public enum BMCFont: String, CaseIterable {
     case cookie
     case lato
     case arial
@@ -17,11 +17,11 @@ public enum BMCFont {
     internal var value: UIFont? {
         switch self {
         case .cookie:
-            return UIFont(name: "Cookie", size: 28)
+            return UIFont(name: rawValue.capitalized, size: 28)
         case .lato:
-            return UIFont(name: "Lato", size: 20)
+            return UIFont(name: rawValue.capitalized, size: 20)
         case .arial:
-            return UIFont(name: "Arial", size: 20)
+            return UIFont(name: rawValue.capitalized, size: 20)
         }
     }
 }

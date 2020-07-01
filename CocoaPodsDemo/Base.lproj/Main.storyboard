@@ -1,41 +1,58 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17132" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17132" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="vx8-gY-n1Y">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17105"/>
-        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Table View Controller-->
+        <scene sceneID="fcT-em-I8N">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CocoaPodsDemo" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                <tableViewController id="vx8-gY-n1Y" customClass="TableViewController" customModule="CocoaPodsDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="s7D-r6-Q9v">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xkk-h6-fkH" customClass="BMCButton" customModule="BuyMeACoffee">
-                                <rect key="frame" x="105" y="422" width="204" height="52"/>
-                                <state key="normal" title="Button"/>
-                            </button>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="xkk-h6-fkH" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="BCE-iS-YoF"/>
-                            <constraint firstItem="xkk-h6-fkH" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="KZC-r4-MbP"/>
-                        </constraints>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="button-cell" id="u9K-Df-eC3" customClass="ButtonTableViewCell" customModule="CocoaPodsDemo" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="414" height="74"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="u9K-Df-eC3" id="uSc-my-E3r">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="74"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5wX-Qt-Om4" customClass="BMCButton" customModule="BuyMeACoffee">
+                                            <rect key="frame" x="20" y="11" width="374" height="52"/>
+                                            <state key="normal" title="Button"/>
+                                        </button>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="trailingMargin" secondItem="5wX-Qt-Om4" secondAttribute="trailing" id="8xT-iz-rGg"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="5wX-Qt-Om4" secondAttribute="bottom" id="Aqo-Nv-NJ0"/>
+                                        <constraint firstItem="5wX-Qt-Om4" firstAttribute="top" secondItem="uSc-my-E3r" secondAttribute="topMargin" id="YnN-id-HQq"/>
+                                        <constraint firstItem="5wX-Qt-Om4" firstAttribute="leading" secondItem="uSc-my-E3r" secondAttribute="leadingMargin" id="cC9-VH-7JM"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="button" destination="5wX-Qt-Om4" id="3hA-gW-sU9"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="vx8-gY-n1Y" id="WIt-3x-PkL"/>
+                            <outlet property="delegate" destination="vx8-gY-n1Y" id="raL-OL-Wne"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sth-vc-bRF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="78" y="108"/>
+            <point key="canvasLocation" x="-908" y="102"/>
         </scene>
     </scenes>
     <designables>
-        <designable name="xkk-h6-fkH">
+        <designable name="5wX-Qt-Om4">
             <size key="intrinsicContentSize" width="204" height="52"/>
         </designable>
     </designables>
