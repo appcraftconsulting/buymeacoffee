@@ -3,6 +3,7 @@
 //  
 //
 //  Created by François Boulais on 26/06/2020.
+//  Copyright © 2020 App Craft Studio. All rights reserved.
 //
 
 public protocol BMCDelegate {
