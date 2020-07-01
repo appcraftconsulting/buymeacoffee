@@ -36,7 +36,3 @@ public final class BMCManager: NSObject {
         present(animated: true, completion: nil)
     }
 }
-
-extension Bundle {
-    static let module = Bundle(for: BMCManager.self)
-}
