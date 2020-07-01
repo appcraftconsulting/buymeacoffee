@@ -5,7 +5,7 @@
 //  Created by François Boulais on 01/07/2020.
 //
 
-import UIKit
+import BuyMeACoffee
 
 class ViewController: UIViewController {
 

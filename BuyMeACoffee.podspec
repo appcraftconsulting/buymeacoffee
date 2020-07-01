@@ -11,9 +11,7 @@ Pod::Spec.new do |spec|
   spec.ios.deployment_target  = '11.0'
   spec.osx.deployment_target  = '10.10'
 
-  spec.source_files       = 'Sources/*.swift'
-  spec.ios.source_files   = 'Reachability/ios/*.swift', 'Reachability/extensions/*.swift'
-  spec.osx.source_files   = 'Reachability/osx/*.swift'
+  spec.source_files       = 'BuyMeACoffee/Sources/*.swift'
 
   spec.framework      = 'SystemConfiguration'
   spec.ios.framework  = 'UIKit'

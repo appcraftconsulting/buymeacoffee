@@ -1,3 +1,21 @@
-PODFILE CHECKSUM: 371466c3d82ca02a361b3fb4cb00efb8e3041f02
+PODS:
+  - BuyMeACoffee (1.0.0)
+
+DEPENDENCIES:
+  - BuyMeACoffee (from `https://github.com/appcraftstudio/buymeacoffee.git`)
+
+EXTERNAL SOURCES:
+  BuyMeACoffee:
+    :git: https://github.com/appcraftstudio/buymeacoffee.git
+
+CHECKOUT OPTIONS:
+  BuyMeACoffee:
+    :commit: ccf6da07206b6d4a30195b40e3f3cdd976fc5638
+    :git: https://github.com/appcraftstudio/buymeacoffee.git
+
+SPEC CHECKSUMS:
+  BuyMeACoffee: e5ec7911ea59573fd84b67398d433ebb62fd56fa
+
+PODFILE CHECKSUM: 95f32fdba4b8fd122762d59f2367916f65968e3f
 
 COCOAPODS: 1.9.3

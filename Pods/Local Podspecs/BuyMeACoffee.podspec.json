@@ -1,0 +1,34 @@
+{
+  "name": "BuyMeACoffee",
+  "version": "1.0.0",
+  "license": {
+    "type": "MIT"
+  },
+  "homepage": "https://github.com/appcraftstudio/buymeacoffee",
+  "authors": {
+    "François Boulais": "francois@appcraftstudio.com"
+  },
+  "summary": "Buy Me A Coffee framework for iOS",
+  "source": {
+    "git": "https://github.com/appcraftstudio/buymeacoffee.git"
+  },
+  "swift_versions": "4.0",
+  "platforms": {
+    "ios": "11.0",
+    "osx": "10.10"
+  },
+  "source_files": "Sources/*.swift",
+  "ios": {
+    "source_files": [
+      "Reachability/ios/*.swift",
+      "Reachability/extensions/*.swift"
+    ],
+    "frameworks": "UIKit"
+  },
+  "osx": {
+    "source_files": "Reachability/osx/*.swift",
+    "frameworks": "AppKit"
+  },
+  "frameworks": "SystemConfiguration",
+  "swift_version": "4.0"
+}
