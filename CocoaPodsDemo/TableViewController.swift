@@ -27,7 +27,7 @@ class TableViewController: UITableViewController, BMCDelegate {
     }
     
     override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        BMCFont.allCases[section].rawValue
+        BMCFont.allCases[section].rawValue.capitalized
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
