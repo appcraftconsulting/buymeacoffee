@@ -74,7 +74,7 @@ public class BMCButton: UIButton {
         titleEdgeInsets = .init(top: 0, left: 6, bottom: 0, right: -6)
         imageEdgeInsets = .init(top: 0, left: -6, bottom: 0, right: 6)
         
-        let image = UIImage(named: "bmc", in: .module, compatibleWith: nil)
+        let image = UIImage(named: "cup", in: .module, compatibleWith: nil)
         setImage(image, for: .normal)
         
         registerFonts()

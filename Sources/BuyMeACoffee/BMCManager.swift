@@ -19,20 +19,16 @@ public final class BMCManager: NSObject {
     
     private override init() { }
     
-    public func present(animated: Bool, completion: (() -> Void)?) {
+    @objc public func start() {
         guard let presentingViewController = presentingViewController else {
-            fatalError("")
+            fatalError("presentingViewController must be set.")
         }
 
         let storyboard = UIStoryboard(name: "BMCScene", bundle: .module)
     
         if let viewController = storyboard.instantiateInitialViewController() {
             viewController.modalPresentationStyle = .formSheet
-            presentingViewController.present(viewController, animated: true, completion: nil)
+            presentingViewController.present(viewController, animated: true)
         }
-    }
-        
-    @objc internal func start() {
-        present(animated: true, completion: nil)
     }
 }
