@@ -4,7 +4,6 @@ import XCTest
 final class BuyMeACoffeeTests: XCTestCase {
     func testExample() {
         let button = BMCButton()
-        button.start()
     }
 
     static var allTests = [
