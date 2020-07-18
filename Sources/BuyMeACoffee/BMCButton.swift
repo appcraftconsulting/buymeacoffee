@@ -5,7 +5,7 @@
 //  Copyright © 2020 App Craft Studio. All rights reserved.
 //
 
-#if canImport(UIKit)
+#if !os(macOS)
 import UIKit
 #endif
 

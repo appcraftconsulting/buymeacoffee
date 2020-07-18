@@ -5,7 +5,10 @@
 //  Copyright © 2020 App Craft Studio. All rights reserved.
 //
 
+#if !os(macOS)
 import UIKit
+#endif
+
 
 public final class BMCManager: NSObject {
     public static let shared = BMCManager()
