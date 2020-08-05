@@ -72,10 +72,11 @@ public class BMCButton: UIButton {
         layer.shadowRadius = 2
         layer.cornerRadius = 5
 
-        contentEdgeInsets = .init(top: 8, left: 24, bottom: 8, right: 24)
+        contentEdgeInsets = .init(top: 8, left: 12, bottom: 8, right: 12)
         titleEdgeInsets = .init(top: 0, left: 6, bottom: 0, right: -6)
         imageEdgeInsets = .init(top: 0, left: -6, bottom: 0, right: 6)
         
+        imageView?.contentMode = .scaleAspectFit
         let image = UIImage(named: "cup", in: .module, compatibleWith: nil)
         setImage(image, for: .normal)
         

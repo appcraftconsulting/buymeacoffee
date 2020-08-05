@@ -19,7 +19,7 @@ public enum BMCFont: String, CaseIterable {
     internal var value: UIFont? {
         switch self {
         case .cookie:
-            return UIFont(name: rawValue.capitalized, size: 28)
+            return UIFont(name: rawValue.capitalized, size: 26)
         case .lato:
             return UIFont(name: rawValue.capitalized, size: 20)
         case .arial:
