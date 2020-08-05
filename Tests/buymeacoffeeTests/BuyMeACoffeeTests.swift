@@ -17,7 +17,7 @@ final class BuyMeACoffeeTests: XCTestCase {
         }
         
         let button = BMCButton(frame: .init(x: 0, y: 0, width: 200, height: 50))
-        button.configuration = .init(color: .red, font: .cookie)
+        button.configuration = .default
                 
         if let data = button.snapshot().pngData() {
             let url = url.appendingPathComponent("bmc-button").appendingPathExtension("png")
