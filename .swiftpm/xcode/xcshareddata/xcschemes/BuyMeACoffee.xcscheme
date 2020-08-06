@@ -60,7 +60,7 @@
             ActionType = "Xcode.IDEStandardExecutionActionsCore.ExecutionActionType.ShellScriptAction">
             <ActionContent
                title = "Run Script"
-               scriptText = "open ~/Library/Developer/CoreSimulator/Devices/$TARGET_DEVICE_IDENTIFIER/data/Downloads/button.png&#10;">
+               scriptText = "open ~/Library/Developer/CoreSimulator/Devices/$TARGET_DEVICE_IDENTIFIER/data/Downloads/bmc-button.png&#10;">
                <EnvironmentBuildable>
                   <BuildableReference
                      BuildableIdentifier = "primary"
