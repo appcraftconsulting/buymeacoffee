@@ -36,6 +36,18 @@ button.configuraton = .init(color: .orange, font: .cookie)
 
 ### `BMCManager`
 
+`BMCManager` is a singleton that is used to configure both username and presenting view controller. The username is the one you've chosen on https://www.buymeacoffee.com, and the presenting view controller is the one that will be used to present donation flow when user tap on the `BMCButton`.
+It can be configured in the `viewDidLoad` function:
+
+```swift
+override func viewDidLoad() {
+    super.viewDidLoad()
+
+    BMCManager.shared.username = "appcraftstudio"
+    BMCManager.shared.presentingViewController = self
+}
+```
+
 ## Installation
 
 ### [CocoaPods](https://guides.cocoapods.org/using/using-cocoapods.html)
