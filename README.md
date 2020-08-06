@@ -1,7 +1,11 @@
-# BuyMeACoffee ☕️!
+# Buy Me a Coffee ☕️
 [Buy Me a Coffee](https://www.buymeacoffee.com) framework for iOS.
 
 [<img src="https://github.com/appcraftstudio/buymeacoffee/blob/master/bmc-button.png">](https://www.buymeacoffee.com/appcraftstudio)
+
+## Usage
+
+
 
 ## Installation
 
