@@ -11,6 +11,8 @@ Earn recurring revenue by offering a monthly or yearly membership.
 **Sell Extras**  
 A new, creative way to offer Zoom calls, art commissions, anything.
 
+![Apple Pay](https://github.com/appcraftstudio/buymeacoffee/raw/master/Images/apple-pay-mark.png)
+
 ## Usage
 ### `BMCButton`
 
@@ -24,13 +26,18 @@ let button = BMCButton(configuration: .default)
 button.configuraton = .init(color: .orange, font: .cookie)
 ```
 
-![Apple Pay](https://github.com/appcraftstudio/buymeacoffee/raw/master/Images/apple-pay-mark.png)
+### `BMCManager`
+
+## Requirements
+
+* Xcode 11.x
+* Swift 5.3
 
 ## Usage
 
 ## Installation
 
-### CocoaPods
+### [CocoaPods](https://guides.cocoapods.org/using/using-cocoapods.html)
 
 You want to add pod `'BuyMeACoffee', '~> 1.0'` similar to the following to your Podfile:
 ```rb
@@ -45,6 +52,9 @@ Alternatively to give it a test run, run the command:
 
 `pod try BuyMeACoffee`
 
-### Swift Package Manager
+### [Swift Package Manager](https://swift.org/package-manager/)
 
 ![Swift Package Manager](https://github.com/appcraftstudio/buymeacoffee/raw/master/Images/screenshot-xcode-spm.png)
+
+## Contributors
+
