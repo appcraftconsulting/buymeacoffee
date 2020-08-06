@@ -26,7 +26,7 @@ A new, creative way to offer Zoom calls, art commissions, anything.
 
 [<img src="https://github.com/appcraftstudio/buymeacoffee/raw/master/Images/snapshot-bmc-button.png">](https://www.buymeacoffee.com/appcraftstudio)
 
-`BMCButton` is a `@IBDesignable` `UIButton` subclass that can comply the official Buy Me a Coffee guidelines. 
+`BMCButton` is a `@IBDesignable` `UIButton` subclass that comply the official Buy Me a Coffee guidelines. 
 It can be customized through its `configuration` field at initialization or later if added in Interface Builder:
 
 ```swift
