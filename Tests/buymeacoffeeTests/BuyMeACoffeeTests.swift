@@ -5,7 +5,7 @@ import XCTest
 final class BuyMeACoffeeTests: XCTestCase {
     private let fileManager: FileManager = .default
     
-    func testScreenshotButton() {
+    func testSnapshotButton() {
         guard let url = fileManager.urls(for: .downloadsDirectory, in: .userDomainMask).first else {
             XCTFail()
             return
@@ -29,7 +29,7 @@ final class BuyMeACoffeeTests: XCTestCase {
     }
 
     static var allTests = [
-        ("screenshot button", testScreenshotButton),
+        ("snapshot button", testSnapshotButton),
     ]
 }
 
