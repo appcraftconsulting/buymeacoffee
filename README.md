@@ -11,6 +11,11 @@ Earn recurring revenue by offering a monthly or yearly membership.
 **Sell Extras**  
 A new, creative way to offer Zoom calls, art commissions, anything.
 
+## Features
+
+[X] Apple Pay
+[X] iCloud Keychain
+
 ![Apple Pay](https://github.com/appcraftstudio/buymeacoffee/raw/master/Images/apple-pay-mark.png)
 
 ## Requirements
