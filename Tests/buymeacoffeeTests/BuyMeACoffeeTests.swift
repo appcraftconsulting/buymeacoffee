@@ -20,7 +20,7 @@ final class BuyMeACoffeeTests: XCTestCase {
         button.configuration = .default
                 
         if let data = button.snapshot().pngData() {
-            let url = url.appendingPathComponent("bmc-button").appendingPathExtension("png")
+            let url = url.appendingPathComponent("snapshot-bmc-button").appendingPathExtension("png")
             print(url.path)
             XCTAssertNoThrow(try data.write(to: url))
         } else {
