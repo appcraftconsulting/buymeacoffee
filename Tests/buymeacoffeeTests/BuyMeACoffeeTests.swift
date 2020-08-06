@@ -6,7 +6,7 @@ final class BuyMeACoffeeTests: XCTestCase {
     private let fileManager: FileManager = .default
     
     func testSnapshotButton() {
-        guard let url = fileManager.urls(for: .downloadsDirectory, in: .userDomainMask).first else {
+        guard let url = fileManager.urls(for: .cachesDirectory, in: .userDomainMask).first else {
             XCTFail()
             return
         }
