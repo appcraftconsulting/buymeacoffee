@@ -1,11 +1,14 @@
 # Buy Me a Coffee ☕️
+
 [Buy Me a Coffee](https://www.buymeacoffee.com) framework for iOS.
 
-[<img src="https://github.com/appcraftstudio/buymeacoffee/blob/master/Images/snapshot-bmc-button.png">](https://www.buymeacoffee.com/appcraftstudio)
+[<img src="https://github.com/appcraftstudio/buymeacoffee/raw/master/Images/snapshot-bmc-button.png">](https://www.buymeacoffee.com/appcraftstudio)
+
+## Features
+
+![Apple Pay](https://github.com/appcraftstudio/buymeacoffee/raw/master/Images/apple-pay-mark.png)
 
 ## Usage
-
-
 
 ## Installation
 
@@ -26,4 +29,4 @@ Alternatively to give it a test run, run the command:
 
 ### Swift Package Manager
 
-![Swift Package Manager](https://github.com/appcraftstudio/buymeacoffee/blob/master/Images/screenshot-xcode-spm.png)
+![Swift Package Manager](https://github.com/appcraftstudio/buymeacoffee/raw/master/Images/screenshot-xcode-spm.png)
