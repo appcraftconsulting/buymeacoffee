@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name          = 'BuyMeACoffee'
-  spec.version       = '1.3'
+  spec.version       = '1.4'
   spec.license       = { :type => 'MIT', :text => <<-LICENSE
                    Copyright © 2020 App Craft Studio. All rights reserved.
                  LICENSE
@@ -13,8 +13,10 @@ Pod::Spec.new do |spec|
 
   spec.ios.deployment_target  = '11.0'
 
-  spec.source_files   = 'Sources/**/*.swift', 'Bundle.swift'
-  
+  spec.source_files    = 'Sources/**/*.swift', 'Bundle.swift'
+  spec.resources       = 'Sources/**/Resources/*.{ttf}'
+  spec.resource_bundle = {'BuyMeACoffee' => ['Sources/**/Resources/*.{xcassets}']}
+
   spec.platform       = :ios, '11.0'
   spec.ios.framework  = 'UIKit', 'WebKit'
 end
