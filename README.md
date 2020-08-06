@@ -2,11 +2,13 @@
 
 >[Buy Me a Coffee](https://www.buymeacoffee.com) is a modern creator platform. It takes two minutes to start your page and has all the features that you need to build your creative business.
 
-*Donations*
+**Donations**
 Give your audience a friendly way to thank you.
-*Memberships*
+
+**Memberships**
 Earn recurring revenue by offering a monthly or yearly membership.
-*Sell Extras*
+
+**Sell Extras**
 A new, creative way to offer Zoom calls, art commissions, anything.
 
 
