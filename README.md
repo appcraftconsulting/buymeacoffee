@@ -11,11 +11,18 @@ Earn recurring revenue by offering a monthly or yearly membership.
 **Sell Extras**  
 A new, creative way to offer Zoom calls, art commissions, anything.
 
+## Usage
+### `BMCButton`
 
 [<img src="https://github.com/appcraftstudio/buymeacoffee/raw/master/Images/snapshot-bmc-button.png">](https://www.buymeacoffee.com/appcraftstudio)
-*`BMCButton`*
 
-## Features
+`BMCButton` is a `UIButton` subclass that can comply the official Buy Me a Coffee guidelines. 
+It can be customized through its `configuration` field at initialization or later if added in Interface Builder:
+
+```swift
+let button = BMCButton(configuration: .default)
+button.configuraton = .init(color: .orange, font: .cookie)
+```
 
 ![Apple Pay](https://github.com/appcraftstudio/buymeacoffee/raw/master/Images/apple-pay-mark.png)
 
