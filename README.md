@@ -1,6 +1,16 @@
-# Buy Me a Coffee ☕️
+# A supporter is  worth a thousand  followers. 
 
-[Buy Me a Coffee](https://www.buymeacoffee.com) framework for iOS.
+[Buy Me a Coffee](https://www.buymeacoffee.com) is a modern creator platform. It takes two minutes to start your page and has all the features that you need to build your creative business.
+
+#### Donations
+Give your audience a friendly way to thank you.
+
+#### Memberships
+Earn recurring revenue by offering a monthly or yearly membership.
+
+#### Sell Extras
+A new, creative way to offer Zoom calls, art commissions, anything.
+
 
 [<img src="https://github.com/appcraftstudio/buymeacoffee/raw/master/Images/snapshot-bmc-button.png">](https://www.buymeacoffee.com/appcraftstudio)
 
