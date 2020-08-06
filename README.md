@@ -7,15 +7,18 @@
 
 ### CocoaPods
 
-Add the following entry to your Podfile:
-
+You want to add pod `'BuyMeACoffee', '~> 1.0'` similar to the following to your Podfile:
 ```rb
-pod 'BuyMeACoffee'
+target 'MyApp' do
+  pod 'BuyMeACoffee', '~> 1.0'
+end
 ```
+Then run a `pod install` inside your terminal, or from CocoaPods.app.
 
-Then run `pod install`.
+---
+Alternatively to give it a test run, run the command:
 
-Don't forget to `import BuyMeACoffee` in every file you'd like to use BuyMeACoffee.
+`pod try BuyMeACoffee`
 
 ### Swift Package Manager
 
