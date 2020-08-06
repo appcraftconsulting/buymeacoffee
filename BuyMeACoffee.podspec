@@ -25,4 +25,8 @@ Pod::Spec.new do |spec|
   spec.resources             = 'Sources/**/Resources/*'
 
   spec.ios.framework         = 'UIKit', 'WebKit'
+  
+  spec.test_spec 'BuyMeACoffeeTests' do |test_spec|
+    test_spec.source_files   = 'Tests/BuyMeACoffeeTests/*.{swift}'
+  end
 end
