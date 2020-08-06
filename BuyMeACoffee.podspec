@@ -15,7 +15,7 @@ Pod::Spec.new do |spec|
   spec.source                = { :git => 'https://github.com/appcraftstudio/buymeacoffee.git', :tag => "#{spec.version}" }
   
   spec.screenshots           = [ 'https://github.com/appcraftstudio/buymeacoffee/raw/master/Images/screenshot-buymeacoffee-home.png',
-                                 'https://github.com/appcraftstudio/buymeacoffee/raw/master/Images/screenshot-buymeacoffee-apple-pay.jpg' ]
+                                 'https://github.com/appcraftstudio/buymeacoffee/raw/master/Images/screenshot-buymeacoffee-apple-pay.png' ]
                                  
   spec.ios.deployment_target = '11.0'
   spec.platform              = :ios, '11.0'
