@@ -13,6 +13,7 @@ A new, creative way to offer Zoom calls, art commissions, anything.
 
 
 [<img src="https://github.com/appcraftstudio/buymeacoffee/raw/master/Images/snapshot-bmc-button.png">](https://www.buymeacoffee.com/appcraftstudio)
+*`BMCButton`*
 
 ## Features
 
