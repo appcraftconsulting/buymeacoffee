@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name                  = 'BuyMeACoffee'
-  spec.version               = '1.0.0'
+  spec.version               = '1.0.1'
  
   spec.license               = { :type => 'BSD', :text => <<-LICENSE
                                    Copyright © 2020 App Craft Studio. All rights reserved.
