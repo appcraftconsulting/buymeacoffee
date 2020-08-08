@@ -14,17 +14,19 @@ import SafariServices
 public final class BMCManager: NSObject {
     public static let shared = BMCManager()
     
-    /// The view controller used to present `BMCViewContoller`
+    /// The view controller used to present donation flow
     public var presentingViewController: UIViewController?
         
+    /// The username you've chosen on www.buymeacoffee.com
     public var username = "appcraftstudio"
     
     private var url: URL? {
-        URL(string: "https://www.buymeacoffee.com/".appending(BMCManager.shared.username))
+        URL(string: "https://www.buymeacoffee.com/".appending(username))
     }
     
     private override init() { }
     
+    /// Start the donation flow on presenting view controller
     @objc public func start() {
         guard let presentingViewController = presentingViewController else {
             fatalError("presentingViewController must be set.")
