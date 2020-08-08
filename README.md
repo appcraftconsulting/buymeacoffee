@@ -18,8 +18,10 @@ A new, creative way to offer Zoom calls, art commissions, anything.
 
 ## Requirements
 
-* Xcode 11.x
-* Swift 5.3
+CocoaPods | Swift Package Manager
+:---: | :---:
+Swift 5.0 | Swift 5.3
+Xcode 11.x | Xcode 12.x
 
 ## Usage
 ### `BMCButton`
