@@ -23,6 +23,10 @@ CocoaPods | Swift Package Manager
 Swift 5.0 | Swift 5.3
 Xcode 11.x | Xcode 12.x
 
+## [App Store Review Guidelines](https://developer.apple.com/app-store/review/guidelines/#acceptable)
+
+**(vii)** Apps may enable individual users to give a monetary gift to another individual without using in-app purchase, provided that (a) the gift is a completely optional choice by the giver, and (b) 100% of the funds go to the receiver of the gift. However, a gift that is connected to or associated at any point in time with receiving digital content or services must use in-app purchase.
+
 ## Usage
 ### `BMCButton`
 
