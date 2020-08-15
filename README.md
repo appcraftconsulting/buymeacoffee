@@ -1,6 +1,6 @@
 # A supporter is  worth a thousand  followers. 
 
->[Buy Me a Coffee](https://www.buymeacoffee.com) is a modern creator platform. It takes two minutes to start your page and has all the features that you need to build your creative business.
+### [Buy Me a Coffee](https://www.buymeacoffee.com) is a modern creator platform. It takes two minutes to start your page and has all the features that you need to build your creative business.
 
 **Donations :moneybag:**  
 Give your audience a friendly way to thank you.
@@ -27,7 +27,7 @@ Xcode 11.x | Xcode 12.x
 
 According to App Store Review Guidelines, at [3.2.1](https://developer.apple.com/app-store/review/guidelines/#acceptable):
 
-**(vii)** Apps may enable individual users to give a monetary gift to another individual without using in-app purchase, provided that (a) the gift is a completely optional choice by the giver, and (b) 100% of the funds go to the receiver of the gift. However, a gift that is connected to or associated at any point in time with receiving digital content or services must use in-app purchase.
+> **(vii)** Apps may enable individual users to give a monetary gift to another individual without using in-app purchase, provided that (a) the gift is a completely optional choice by the giver, and (b) 100% of the funds go to the receiver of the gift. However, a gift that is connected to or associated at any point in time with receiving digital content or services must use in-app purchase.
 
 ## Usage
 ### `BMCButton`
