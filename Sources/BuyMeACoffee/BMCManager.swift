@@ -129,7 +129,7 @@ public final class BMCManager: NSObject, SKProductsRequestDelegate, SKPaymentTra
         }))
         
         alertController.view.tintColor = BMCColor.default.background
-        presentingViewController?.present(alertController, animated: true)
+        loadingViewController.present(alertController, animated: true)
     }
     
     // MARK: - SKProductsRequestDelegate
