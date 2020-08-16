@@ -75,7 +75,7 @@ public final class BMCManager: NSObject, SKProductsRequestDelegate, SKPaymentTra
      */
     public func configure(username: String, productIdentifier: String? = nil) {
         self.username = username
-        
+
         guard SKPaymentQueue.canMakePayments(), let productIdentifier = productIdentifier else {
             return
         }
