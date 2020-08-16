@@ -140,7 +140,7 @@ public final class BMCManager: NSObject, SKProductsRequestDelegate, SKPaymentTra
             switch transaction.transactionState {
             case .purchased:
                 showPurchasedMessage()
-                paymentQueue.finishTransaction(transaction)
+                SKPaymentQueue.default().finishTransaction(transaction)
             case .failed:
                 if (transaction.error as? SKError)?.code != .paymentCancelled {
                     loadingViewController.dismiss(animated: true) { [weak self] in
