@@ -41,10 +41,10 @@ public final class BMCManager: NSObject, SKProductsRequestDelegate, SKPaymentTra
         }
         
         activityIndicatorView.translatesAutoresizingMaskIntoConstraints = false
+        activityIndicatorView.color = BMCColor.default.background
         activityIndicatorView.startAnimating()
         
         let viewController = UIViewController()
-        viewController.view.tintColor = BMCColor.default.background
         viewController.view.backgroundColor = .white
         viewController.view.addSubview(activityIndicatorView)
         viewController.modalPresentationStyle = .formSheet
