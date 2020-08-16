@@ -29,7 +29,7 @@ According to App Store Review Guidelines, at [3.2.1](https://developer.apple.com
 
 > **(vii)** Apps may enable individual users to give a monetary gift to another individual without using in-app purchase, provided that (a) the gift is a completely optional choice by the giver, and (b) 100% of the funds go to the receiver of the gift. However, a gift that is connected to or associated at any point in time with receiving digital content or services must use in-app purchase.
 
-## Usage
+## Implement Buy Me a Coffee (⏱ 10 min.)
 
 `BMCManager` is a singleton that is used to configure both username and presenting view controller. The username is the one you've chosen on www.buymeacoffee.com, and the presenting view controller is the one that will be used to present donation flow when user tap on the `BMCButton`.
 
@@ -56,7 +56,7 @@ button.configuraton = .init(color: .orange, font: .cookie)
 ```
 [<img src="https://github.com/appcraftstudio/buymeacoffee/raw/master/Images/snapshot-bmc-button.png">](https://www.buymeacoffee.com/appcraftstudio)
 
-## Configure In-App Purchase
+## Configure In-App Purchase (⏱ 5 min.)
 
 ### App Store Connect
 
@@ -77,6 +77,8 @@ In order to pass App Store Review, you'll have to configure an In-App Purchase. 
 |||
 | **Review Screenshot** | [download here](https://github.com/appcraftstudio/buymeacoffee/raw/master/Images/in-app-purchase-promotional-image.jpg) |
 | **Review Notes** | *Buy Me a Coffee enable customers to “tip” digital content providers in the app.* |
+
+### Capabilities
 
 ## Installation
 
