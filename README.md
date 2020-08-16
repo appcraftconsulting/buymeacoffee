@@ -62,9 +62,11 @@ button.configuraton = .init(color: .orange, font: .cookie)
 
 ## Configure In-App Purchase (⏱ 5 min.)
 
+In-App Purchase configuration may be required for App Store Review.
+
 ### App Store Connect
 
-In-App Purchase configuration is required for App Store Review. Go to [App Store Connect](https://appstoreconnect.apple.com), search for the *In-App Purchases* section of your app, and then, create a new one with the following informations:
+Go to [App Store Connect](https://appstoreconnect.apple.com), search for the *In-App Purchases* section of your app, and then, create a new one with the following informations:
 
 |||
 | --- | --- |
@@ -84,6 +86,13 @@ In-App Purchase configuration is required for App Store Review. Go to [App Store
 
 ### Capabilities
 
+1. Select the current workspace in the project navigator.
+2. Then, select the app target in the left panel.
+3. Go to the *Signing & Capabilities* tab.
+4. Add the *In-App Purchase* capability.
+
+![Xcode capabilities](Images/screenshot-xcode-capabilities.png)
+
 ## Installation
 
 ### [CocoaPods](https://guides.cocoapods.org/using/using-cocoapods.html)
@@ -102,7 +111,7 @@ Then run a `pod install` inside your terminal, or from CocoaPods.app.
 2. Paste the project URL: https://github.com/appcraftstudio/buymeacoffee.git
 3. Click on next and select the project target
 
-![Swift Package Manager](https://github.com/appcraftstudio/buymeacoffee/raw/master/Images/screenshot-xcode-spm.png)
+![Swift Package Manager](Images/screenshot-xcode-spm.png)
 
 ---
 
