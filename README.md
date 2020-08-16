@@ -23,10 +23,14 @@ CocoaPods | Swift Package Manager
 Swift 5.0 | Swift 5.3
 Xcode 11.x | Xcode 12.x
 
-## App Store Review
+## App Store Review 
 
-According to App Store Review Guidelines, at [3.2.1](https://developer.apple.com/app-store/review/guidelines/#acceptable):
+These are the two App Store Review Guidelines articles you have to know before using this framework:
 
+[3.1.1 In-App Purchase](https://developer.apple.com/app-store/review/guidelines/#in-app-purchase)
+> - Apps may use in-app purchase currencies to enable customers to “tip” digital content providers in the app.
+
+[3.2.1 Acceptable](https://developer.apple.com/app-store/review/guidelines/#acceptable):
 > **(vii)** Apps may enable individual users to give a monetary gift to another individual without using in-app purchase, provided that (a) the gift is a completely optional choice by the giver, and (b) 100% of the funds go to the receiver of the gift. However, a gift that is connected to or associated at any point in time with receiving digital content or services must use in-app purchase.
 
 ## Implement Buy Me a Coffee (⏱ 10 min.)
@@ -60,7 +64,7 @@ button.configuraton = .init(color: .orange, font: .cookie)
 
 ### App Store Connect
 
-In order to pass App Store Review, you'll have to configure an In-App Purchase. Go to [App Store Connect](https://appstoreconnect.apple.com), search for the *In-App Purchases* section of your app, and then, create a new one with the following informations:
+In-App Purchase configuration is required for App Store Review. Go to [App Store Connect](https://appstoreconnect.apple.com), search for the *In-App Purchases* section of your app, and then, create a new one with the following informations:
 
 |||
 | --- | --- |
