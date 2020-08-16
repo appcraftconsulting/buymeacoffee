@@ -45,10 +45,10 @@ public final class BMCManager: NSObject, SKProductsRequestDelegate, SKPaymentTra
         - username: The username you've chosen on www.buymeacoffee.com.
         - productIdentifier: The In App Purchase product identifier you've configured on App Store Connect.
      */
-    public func configure(with username: String, and productIdentifier: String) {
+    public func configure(username: String, productIdentifier: String? = nil) {
         self.username = username
         
-        guard SKPaymentQueue.canMakePayments() else {
+        guard SKPaymentQueue.canMakePayments(), let productIdentifier = productIdentifier else {
             return
         }
         
