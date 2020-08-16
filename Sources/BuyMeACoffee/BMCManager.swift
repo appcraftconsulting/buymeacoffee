@@ -33,9 +33,6 @@ public final class BMCManager: NSObject, SKProductsRequestDelegate, SKPaymentTra
     private var productsRequest: SKProductsRequest?
     
     private lazy var loadingViewController: UIViewController = {
-        let viewController = UIViewController()
-        viewController.view.tintColor = BMCColor.default.background
-        
         let activityIndicatorView: UIActivityIndicatorView
         if #available(iOS 13.0, *) {
             activityIndicatorView = UIActivityIndicatorView(style: .large)
@@ -45,8 +42,13 @@ public final class BMCManager: NSObject, SKProductsRequestDelegate, SKPaymentTra
         
         activityIndicatorView.translatesAutoresizingMaskIntoConstraints = false
         activityIndicatorView.startAnimating()
-        viewController.view.addSubview(activityIndicatorView)
         
+        let viewController = UIViewController()
+        viewController.view.tintColor = BMCColor.default.background
+        viewController.view.backgroundColor = .white
+        viewController.view.addSubview(activityIndicatorView)
+        viewController.modalPresentationStyle = .formSheet
+
         NSLayoutConstraint.activate([
             activityIndicatorView.centerXAnchor.constraint(equalTo: viewController.view.centerXAnchor),
             activityIndicatorView.centerYAnchor.constraint(equalTo: viewController.view.centerYAnchor)
@@ -142,8 +144,8 @@ public final class BMCManager: NSObject, SKProductsRequestDelegate, SKPaymentTra
                 showPurchasedMessage()
                 SKPaymentQueue.default().finishTransaction(transaction)
             case .failed:
-                if (transaction.error as? SKError)?.code != .paymentCancelled {
-                    loadingViewController.dismiss(animated: true) { [weak self] in
+                loadingViewController.dismiss(animated: true) { [weak self] in
+                    if (transaction.error as? SKError)?.code != .paymentCancelled {
                         self?.fallback()
                     }
                 }
