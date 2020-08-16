@@ -100,12 +100,15 @@ public class BMCButton: UIButton {
         setTitleColor(configuration.color.title, for: .normal)
         backgroundColor = configuration.color.background
         
-        if let product = BMCManager.shared.product,
-           let price = numberFormatter.string(from: product.price) {
-            setTitle("\(configuration.title) (\(price))€", for: .normal)
-        } else {
-            setTitle(configuration.title, for: .normal)
+        var title = configuration.title
+        if let product = BMCManager.shared.product {
+            numberFormatter.locale = product.priceLocale
+            if let price = numberFormatter.string(from: product.price) {
+                title.append(" (\(price)")
+            }
         }
+
+        setTitle(title, for: .normal)
     }
     
     private func registerFonts() {
