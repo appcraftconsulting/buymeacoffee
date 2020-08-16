@@ -71,19 +71,20 @@ public final class BMCManager: NSObject, SKProductsRequestDelegate, SKPaymentTra
      Configure the manager for future donation requests.
      - parameters:
         - username: The username you've chosen on www.buymeacoffee.com.
-        - productIdentifier: The In App Purchase product identifier you've configured on App Store Connect.
      */
-    public func configure(username: String, productIdentifier: String? = nil) {
+    public func configure(username: String) {
         self.username = username
 
-        guard SKPaymentQueue.canMakePayments(), let productIdentifier = productIdentifier else {
+        guard SKPaymentQueue.canMakePayments() else {
             return
         }
         
-        productsRequest?.cancel()
-        productsRequest = SKProductsRequest(productIdentifiers: [productIdentifier])
-        productsRequest?.delegate = self
-        productsRequest?.start()
+        if let productIdentifier = Bundle.main.bundleIdentifier?.appending(".buymeacoffee") {
+            productsRequest?.cancel()
+            productsRequest = SKProductsRequest(productIdentifiers: [productIdentifier])
+            productsRequest?.delegate = self
+            productsRequest?.start()
+        }
     }
     
     /**
