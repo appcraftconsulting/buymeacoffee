@@ -47,6 +47,7 @@ public final class BMCManager: NSObject, SKProductsRequestDelegate, SKPaymentTra
         let viewController = UIViewController()
         viewController.view.backgroundColor = .white
         viewController.view.addSubview(activityIndicatorView)
+        viewController.isModalInPresentation = true
         viewController.modalPresentationStyle = .formSheet
 
         NSLayoutConstraint.activate([
@@ -96,8 +97,8 @@ public final class BMCManager: NSObject, SKProductsRequestDelegate, SKPaymentTra
         
         presentingViewController.present(loadingViewController, animated: true) {
             let payment = SKPayment(product: product)
-            SKPaymentQueue.default().add(payment)
             SKPaymentQueue.default().add(self)
+            SKPaymentQueue.default().add(payment)
         }
     }
     
