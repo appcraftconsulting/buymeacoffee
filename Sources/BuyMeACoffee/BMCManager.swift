@@ -47,8 +47,11 @@ public final class BMCManager: NSObject, SKProductsRequestDelegate, SKPaymentTra
         let viewController = UIViewController()
         viewController.view.backgroundColor = .white
         viewController.view.addSubview(activityIndicatorView)
-        viewController.isModalInPresentation = true
         viewController.modalPresentationStyle = .formSheet
+        
+        if #available(iOS 13.0, *) {
+            viewController.isModalInPresentation = true
+        }
 
         NSLayoutConstraint.activate([
             activityIndicatorView.centerXAnchor.constraint(equalTo: viewController.view.centerXAnchor),
