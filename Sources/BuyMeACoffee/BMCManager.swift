@@ -31,7 +31,6 @@ public final class BMCManager: NSObject, SKProductsRequestDelegate, SKPaymentTra
     
     private var username = "appcraftstudio"
     private var productsRequest: SKProductsRequest?
-    private let paymentQueue: SKPaymentQueue = .default()
     
     private lazy var loadingViewController: UIViewController = {
         let viewController = UIViewController()
@@ -44,6 +43,7 @@ public final class BMCManager: NSObject, SKProductsRequestDelegate, SKPaymentTra
             activityIndicatorView = UIActivityIndicatorView(style: .whiteLarge)
         }
         
+        activityIndicatorView.translatesAutoresizingMaskIntoConstraints = false
         activityIndicatorView.startAnimating()
         viewController.view.addSubview(activityIndicatorView)
         
@@ -84,7 +84,7 @@ public final class BMCManager: NSObject, SKProductsRequestDelegate, SKPaymentTra
      Start the donation flow on presenting view controller.
      */
     @objc public func start() {
-        guard presentingViewController != nil else {
+        guard let presentingViewController = presentingViewController else {
             fatalError("presentingViewController must be set.")
         }
         
@@ -92,9 +92,11 @@ public final class BMCManager: NSObject, SKProductsRequestDelegate, SKPaymentTra
             return fallback()
         }
         
-        let payment = SKPayment(product: product)
-        paymentQueue.add(payment)
-        paymentQueue.add(self)
+        presentingViewController.present(loadingViewController, animated: true) {
+            let payment = SKPayment(product: product)
+            SKPaymentQueue.default().add(payment)
+            SKPaymentQueue.default().add(self)
+        }
     }
     
     // MARK: - Private functions
