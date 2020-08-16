@@ -32,6 +32,28 @@ public final class BMCManager: NSObject, SKProductsRequestDelegate, SKPaymentTra
     private var username = "appcraftstudio"
     private var productsRequest: SKProductsRequest?
     private let paymentQueue: SKPaymentQueue = .default()
+    
+    private lazy var loadingViewController: UIViewController = {
+        let viewController = UIViewController()
+        viewController.view.tintColor = BMCColor.default.background
+        
+        let activityIndicatorView: UIActivityIndicatorView
+        if #available(iOS 13.0, *) {
+            activityIndicatorView = UIActivityIndicatorView(style: .large)
+        } else {
+            activityIndicatorView = UIActivityIndicatorView(style: .whiteLarge)
+        }
+        
+        activityIndicatorView.startAnimating()
+        viewController.view.addSubview(activityIndicatorView)
+        
+        NSLayoutConstraint.activate([
+            activityIndicatorView.centerXAnchor.constraint(equalTo: viewController.view.centerXAnchor),
+            activityIndicatorView.centerYAnchor.constraint(equalTo: viewController.view.centerYAnchor)
+        ])
+        
+        return viewController
+    }()
 
     private var url: URL? {
         URL(string: "https://www.buymeacoffee.com/".appending(username))
@@ -92,8 +114,13 @@ public final class BMCManager: NSObject, SKProductsRequestDelegate, SKPaymentTra
     
     private func showPurchasedMessage() {
         let message = thankYouMessage ?? "Thank you for supporting 🎉"
-        let alertController = UIAlertController(title: nil, message: message, preferredStyle: .alert)
-        alertController.addAction(.init(title: "Close", style: .default, handler: nil))
+        let alertController = UIAlertController(title: "Buy Me a Coffee", message: message, preferredStyle: .alert)
+        
+        alertController.addAction(.init(title: "Close", style: .default, handler: { [weak self] _ in
+            self?.loadingViewController.dismiss(animated: true)
+        }))
+        
+        alertController.view.tintColor = BMCColor.default.background
         presentingViewController?.present(alertController, animated: true)
     }
     
@@ -113,7 +140,11 @@ public final class BMCManager: NSObject, SKProductsRequestDelegate, SKPaymentTra
                 showPurchasedMessage()
                 paymentQueue.finishTransaction(transaction)
             case .failed:
-                fallback()
+                if (transaction.error as? SKError)?.code != .paymentCancelled {
+                    loadingViewController.dismiss(animated: true) { [weak self] in
+                        self?.fallback()
+                    }
+                }
             case .restored:
                 break
             case .deferred:
