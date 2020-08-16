@@ -47,6 +47,15 @@ button.configuraton = .init(color: .orange, font: .cookie)
 `BMCManager` is a singleton that is used to configure both username and presenting view controller. The username is the one you've chosen on www.buymeacoffee.com, and the presenting view controller is the one that will be used to present donation flow when user tap on the `BMCButton`.
 It can be configured in the `viewDidLoad` function:
 
+```swift
+override func viewDidLoad() {
+    super.viewDidLoad()
+
+    BMCManager.shared.username = "appcraftstudio"
+    BMCManager.shared.presentingViewController = self
+}
+```
+
 ## Configure In-App Purchase
 
 ### App Store Connect
@@ -70,15 +79,6 @@ In order to pass App Store Review, you'll have to configure an In-App Purchase. 
 #### Review
 - *Screenshot*: [download the resource](https://github.com/appcraftstudio/buymeacoffee/raw/master/Images/in-app-purchase-promotional-image.jpg)
 - *Message*: `"Buy Me a Coffee enable customers to “tip” digital content providers in the app."`
-
-```swift
-override func viewDidLoad() {
-    super.viewDidLoad()
-
-    BMCManager.shared.username = "appcraftstudio"
-    BMCManager.shared.presentingViewController = self
-}
-```
 
 ## Installation
 
