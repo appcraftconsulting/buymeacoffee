@@ -104,7 +104,7 @@ public class BMCButton: UIButton {
         if let product = BMCManager.shared.product {
             numberFormatter.locale = product.priceLocale
             if let price = numberFormatter.string(from: product.price) {
-                title.append(" (\(price)")
+                title.append(" (\(price))")
             }
         }
 
