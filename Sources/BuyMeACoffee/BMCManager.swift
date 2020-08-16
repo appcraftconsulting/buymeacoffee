@@ -17,8 +17,11 @@ public final class BMCManager: NSObject, SKProductsRequestDelegate, SKPaymentTra
     
     // MARK: - Public properties
     
-    /// The view controller used to present donation flow
+    /// The view controller used to present donation flow.
     public var presentingViewController: UIViewController?
+    
+    /// This text is displayed to supporters immediately after they make a payment.
+    public var thankYouMessage: String?
     
     // MARK: - Internal properties
     
@@ -37,10 +40,10 @@ public final class BMCManager: NSObject, SKProductsRequestDelegate, SKPaymentTra
     // MARK: - Public functions
     
     /**
-     Configure the manager for future donation requests
+     Configure the manager for future donation requests.
      - parameters:
-        - username: The username you've chosen on www.buymeacoffee.com
-        - productIdentifier: The In App Purchase product identifier you've configured on App Store Connect
+        - username: The username you've chosen on www.buymeacoffee.com.
+        - productIdentifier: The In App Purchase product identifier you've configured on App Store Connect.
      */
     public func configure(with username: String, and productIdentifier: String) {
         self.username = username
@@ -56,7 +59,7 @@ public final class BMCManager: NSObject, SKProductsRequestDelegate, SKPaymentTra
     }
     
     /**
-     Start the donation flow on presenting view controller
+     Start the donation flow on presenting view controller.
      */
     @objc public func start() {
         guard presentingViewController != nil else {
@@ -69,6 +72,7 @@ public final class BMCManager: NSObject, SKProductsRequestDelegate, SKPaymentTra
         
         let payment = SKPayment(product: product)
         paymentQueue.add(payment)
+        paymentQueue.add(self)
     }
     
     // MARK: - Private functions
@@ -86,6 +90,13 @@ public final class BMCManager: NSObject, SKProductsRequestDelegate, SKPaymentTra
         presentingViewController?.present(viewController, animated: true)
     }
     
+    private func showPurchasedMessage() {
+        let message = thankYouMessage ?? "Thank you for supporting 🎉"
+        let alertController = UIAlertController(title: nil, message: message, preferredStyle: .alert)
+        alertController.addAction(.init(title: "Close", style: .default, handler: nil))
+        presentingViewController?.present(alertController, animated: true)
+    }
+    
     // MARK: - SKProductsRequestDelegate
     
     public func productsRequest(_ request: SKProductsRequest, didReceive response: SKProductsResponse) {
@@ -99,6 +110,7 @@ public final class BMCManager: NSObject, SKProductsRequestDelegate, SKPaymentTra
         for transaction in transactions {
             switch transaction.transactionState {
             case .purchased:
+                showPurchasedMessage()
                 paymentQueue.finishTransaction(transaction)
             case .failed:
                 fallback()
