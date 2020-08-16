@@ -49,25 +49,29 @@ It can be configured in the `viewDidLoad` function:
 
 ## Configure In-App Purchase
 
-** App Store Connect
+### App Store Connect
 
 In order to pass App Store Review, you'll have to configure an In-App Purchase. Go to [App Store Connect](https://appstoreconnect.apple.com), search for the *In-App Purchases* section of your app, and then, create a new one with the following informations:
 
-**General**  
+#### General
+---
 - *Type*: Consumable
 - *Reference Name*: "Buy Me a Coffee"
 - *Product ID*: `your.app.bundle.identifier`.buymeacoffee
 - *Cleared for Sale*: :white_check_mark:
 - *Price Tier*: The cost of the :coffee:
 
-**App Store**  
+#### App Store
+---
 - *Display Name*: "Buy Me a Coffee"
 - *Description*: "Hey there! You can now buy me a coffee!"
 
-**Promotion in App Store (optional)**  
+#### Promotion in App Store (optional)
+---
 - *Image*: [download the resource](https://github.com/appcraftstudio/buymeacoffee/raw/master/Images/in-app-purchase-promotional-image.jpg)
 
-**Review**  
+#### Review
+---
 - *Screenshot*: [download the resource](https://github.com/appcraftstudio/buymeacoffee/raw/master/Images/in-app-purchase-promotional-image.jpg)
 - *Message*: `"Buy Me a Coffee enable customers to “tip” digital content providers in the app."`
 
