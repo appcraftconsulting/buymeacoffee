@@ -102,7 +102,7 @@ public class BMCButton: UIButton {
         
         if let product = BMCManager.shared.product,
            let price = numberFormatter.string(from: product.price) {
-            setTitle("\(configuration.title) (\(price))", for: .normal)
+            setTitle("\(configuration.title) (\(price))€", for: .normal)
         } else {
             setTitle(configuration.title, for: .normal)
         }
