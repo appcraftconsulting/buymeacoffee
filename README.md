@@ -59,11 +59,10 @@ button.configuraton = .init(color: .orange, font: .cookie)
 
 ## (Optional) Configure In-App Purchase
 
-Depending the legal receiver of the gift configured on Buy Me a Coffee, App Store reviewers can ask for In-App Purchase implementation.
-
+Depending the legal receiver of the gift configured on Buy Me a Coffee, App Store reviewers can ask for In-App Purchase implementation.  
 If the following In-App Purchase if configured for your application, it will be displayed as primary flow when user tap on the `BMCButton`.
 
-**If the framework can't retrieve In-App Purchase informations, the web flow will be used as a fallback**
+**If the framework can't retrieve In-App Purchase informations, the web flow will be used as fallback.**
 
 ### App Store Connect
 
