@@ -1,13 +1,9 @@
 import XCTest
 
-#if !canImport(ObjectiveC) && canImport(UIKit)
+#if !canImport(ObjectiveC)
 public func allTests() -> [XCTestCaseEntry] {
     return [
         testCase(buymeacoffeeTests.allTests),
     ]
-}
-#else
-public func allTests() -> [XCTestCaseEntry] {
-    return []
 }
 #endif
