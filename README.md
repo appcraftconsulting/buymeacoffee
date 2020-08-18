@@ -1,3 +1,5 @@
+![Continuous Integration](https://github.com/appcraftstudio/buymeacoffee/workflows/Continuous Integration/badge.svg)
+
 # A supporter is  worth a thousand  followers. 
 
 ### [Buy Me a Coffee](https://www.buymeacoffee.com) is a modern creator platform. It takes two minutes to start your page and has all the features that you need to build your creative business.
