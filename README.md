@@ -11,11 +11,10 @@ Give your audience a friendly way to thank you.
 Earn recurring revenue by offering a monthly or yearly membership.
 
 **Sell Extras :sparkles:**  
-A new, creative way to offer Zoom calls, art commissions, anything.
-
-
+A new, creative way to offer Zoom calls, art commissions, anything.  
 
 <p align="center">
+<br>
 <img src="https://github.com/appcraftstudio/buymeacoffee/raw/master/Images/screenshot-buymeacoffee-home.png" width="320">
 <img src="https://github.com/appcraftstudio/buymeacoffee/raw/master/Images/screenshot-buymeacoffee-apple-pay.png" width="320">
 </p>
