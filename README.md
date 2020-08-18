@@ -2,12 +2,12 @@
 
 # A supporter is  worth a thousand  followers. 
 
-<p align="center">
-<img src=https://github.com/appcraftstudio/buymeacoffee/raw/master/Images/screenshot-buymeacoffee-home.png"/>
-<img src=https://github.com/appcraftstudio/buymeacoffee/raw/master/Images/screenshot-buymeacoffee-apple-pay.png"/>
-</p>
-
 ### [Buy Me a Coffee](https://www.buymeacoffee.com) is a modern creator platform. It takes two minutes to start your page and has all the features that you need to build your creative business.
+
+<p align="center">
+<img src="https://github.com/appcraftstudio/buymeacoffee/raw/master/Images/screenshot-buymeacoffee-home.png" width="320">
+<img src="https://github.com/appcraftstudio/buymeacoffee/raw/master/Images/screenshot-buymeacoffee-apple-pay.png" width="320">
+</p>
 
 **Donations :moneybag:**  
 Give your audience a friendly way to thank you.
