@@ -1,4 +1,4 @@
-![Continuous Integration](https://github.com/appcraftstudio/buymeacoffee/workflows/Continuous Integration/badge.svg)
+![Continuous Integration](http![Swift](https://github.com/appcraftstudio/buymeacoffee/workflows/Swift/badge.svg)
 
 # A supporter is  worth a thousand  followers. 
 
