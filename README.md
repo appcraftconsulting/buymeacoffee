@@ -77,8 +77,8 @@ Go to [App Store Connect](https://appstoreconnect.apple.com), search for the *In
 | **Price** | Tier 4 |
 | **Display Name** | *Buy Me a Coffee* |
 | **Description** | *Hey there! You can now buy me a coffee!*
-| **Promotional image** | [download here](https://github.com/appcraftstudio/buymeacoffee/raw/master/Images/in-app-purchase-promotional-image.jpg) |
-| **Review Screenshot** | [download here](https://github.com/appcraftstudio/buymeacoffee/raw/master/Images/in-app-purchase-promotional-image.jpg) |
+| **Promotional Image** | [download here](https://github.com/appcraftstudio/buymeacoffee/raw/master/Images/in-app-purchase-promotional-image.jpg) |
+| **Review Screenshot** | [download here](https://github.com/appcraftstudio/buymeacoffee/raw/master/Images/in-app-purchase-review-screenshot.png) |
 | **Review Notes** | *Buy Me a Coffee enable customers to “tip” digital content providers in the app.* |
 
 ### Capabilities
@@ -88,7 +88,7 @@ Go to [App Store Connect](https://appstoreconnect.apple.com), search for the *In
 3. Go to the *Signing & Capabilities* tab.
 4. Add the *In-App Purchase* capability.
 
-![Xcode capabilities](Images/screenshot-xcode-capabilities.png)
+![Xcode capabilities](https://github.com/appcraftstudio/buymeacoffee/raw/master/Images/screenshot-xcode-capabilities.png)
 
 ## Installation
 
@@ -108,7 +108,7 @@ Then run a `pod install` inside your terminal, or from CocoaPods.app.
 2. Paste the project URL: https://github.com/appcraftstudio/buymeacoffee.git
 3. Click on next and select the project target
 
-![Swift Package Manager](Images/screenshot-xcode-spm.png)
+![Swift Package Manager](https://github.com/appcraftstudio/buymeacoffee/raw/master/Images/screenshot-xcode-spm.png)
 
 ---
 
