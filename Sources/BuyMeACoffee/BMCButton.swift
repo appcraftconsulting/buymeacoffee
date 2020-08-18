@@ -24,6 +24,12 @@ public class BMCButton: UIButton {
         public static let `default`: Self = .init(color: .default, font: .default)
     }
     
+    private lazy var numberFormatter: NumberFormatter = {
+        let numberFormatter = NumberFormatter()
+        numberFormatter.numberStyle = .currency
+        return numberFormatter
+    }()
+    
     public var configuration: Configuration = .default {
         didSet {
             configure(with: configuration)
@@ -90,9 +96,18 @@ public class BMCButton: UIButton {
     
     private func configure(with configuration: Configuration) {
         titleLabel?.font = configuration.font.value
-        setTitle(configuration.title, for: .normal)
         setTitleColor(configuration.color.title, for: .normal)
         backgroundColor = configuration.color.background
+        
+        var title = configuration.title
+        if let product = BMCManager.shared.product {
+            numberFormatter.locale = product.priceLocale
+            if let price = numberFormatter.string(from: product.price) {
+                title.append(" (\(price))")
+            }
+        }
+
+        setTitle(title, for: .normal)
     }
     
     private func registerFonts() {
