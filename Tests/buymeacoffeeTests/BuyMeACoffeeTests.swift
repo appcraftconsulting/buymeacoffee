@@ -28,9 +28,13 @@ final class BuyMeACoffeeTests: XCTestCase {
         }
     }
 
+    #if canImport(UIKit)
     static var allTests = [
         ("snapshot button", testSnapshotButton),
     ]
+    #else
+    static var allTests = []
+    #endif
 }
 
 fileprivate extension BMCButton {
