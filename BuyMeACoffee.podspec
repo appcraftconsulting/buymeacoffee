@@ -1,11 +1,7 @@
 Pod::Spec.new do |spec|
   spec.name                  = 'BuyMeACoffee'
   spec.version               = '1.0.1'
- 
-  spec.license               = { :type => 'BSD', :text => <<-LICENSE
-                                   Copyright © 2020 App Craft Studio. All rights reserved.
-                                 LICENSE
-                               }
+  spec.license               = { :type => "MIT", :file => "LICENSE" }
                                
   spec.homepage              = 'https://www.buymeacoffee.com'
   spec.author                = { 'François Boulais' => 'francois@appcraftstudio.com' }
