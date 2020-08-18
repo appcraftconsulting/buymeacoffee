@@ -2,6 +2,7 @@ import Foundation
 import XCTest
 @testable import BuyMeACoffee
 
+#if canImport(UIKit)
 final class BuyMeACoffeeTests: XCTestCase {
     private let fileManager: FileManager = .default
     
@@ -28,13 +29,9 @@ final class BuyMeACoffeeTests: XCTestCase {
         }
     }
 
-    #if canImport(UIKit)
     static var allTests = [
         ("snapshot button", testSnapshotButton),
     ]
-    #else
-    static var allTests = []
-    #endif
 }
 
 fileprivate extension BMCButton {
@@ -48,3 +45,4 @@ fileprivate extension BMCButton {
         }
     }
 }
+#endif
