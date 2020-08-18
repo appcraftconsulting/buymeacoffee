@@ -5,10 +5,8 @@
 //  Copyright © 2020 App Craft Studio. All rights reserved.
 //
 
-#if !os(macOS)
+#if canImport(UIKit)
 import UIKit
-#endif
-
 import SafariServices
 
 public final class BMCManager: NSObject {
@@ -40,3 +38,4 @@ public final class BMCManager: NSObject {
         }
     }
 }
+#endif

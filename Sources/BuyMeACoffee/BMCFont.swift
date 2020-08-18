@@ -5,9 +5,8 @@
 //  Copyright © 2020 App Craft Studio. All rights reserved.
 //
 
-#if !os(macOS)
+#if canImport(UIKit)
 import UIKit
-#endif
 
 public enum BMCFont: String, CaseIterable {
     case cookie
@@ -27,3 +26,4 @@ public enum BMCFont: String, CaseIterable {
         }
     }
 }
+#endif
