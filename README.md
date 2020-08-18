@@ -96,7 +96,9 @@ Go to [App Store Connect](https://appstoreconnect.apple.com), search for the *In
 3. Go to the *Signing & Capabilities* tab.
 4. Add the *In-App Purchase* capability.
 
-![Xcode capabilities](https://github.com/appcraftstudio/buymeacoffee/raw/master/Images/screenshot-xcode-capabilities.png)
+<p align="center">
+<img src="https://github.com/appcraftstudio/buymeacoffee/raw/master/Images/screenshot-xcode-capabilities.png" width="600">
+</p>
 
 ## Installation
 
