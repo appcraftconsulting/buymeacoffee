@@ -35,14 +35,11 @@ These are the two App Store Review Guidelines articles you have to know before u
 
 ## Implement Buy Me a Coffee
 
-`BMCManager` is a singleton that is used to configure both username and presenting view controller. The username is the one you've chosen on www.buymeacoffee.com, and the presenting view controller is the one that will be used to present donation flow when user tap on the `BMCButton`.
-
-
 1. Import the BuyMeACoffee framework in your `UIApplicationDelegate`:
 ```swift
 import BuyMeACoffee
 ```
-2. Configure the `BMCManager` shared instance, typically in your app's `application:didFinishLaunchingWithOptions:` method:
+2. Configure the `BMCManager` shared instance with the username you've chosen on www.buymeacoffee.com, typically in your app's `application:didFinishLaunchingWithOptions:` method:
 ```swift
 BMCManager.shared.configure(username: "appcraftstudio")
 ```
