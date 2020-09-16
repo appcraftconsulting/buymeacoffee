@@ -163,5 +163,9 @@ public final class BMCManager: NSObject, SKProductsRequestDelegate, SKPaymentTra
             }
         }
     }
+    
+    public func paymentQueue(_ queue: SKPaymentQueue, shouldAddStorePayment payment: SKPayment, for product: SKProduct) -> Bool {
+        true
+    }
 }
 #endif
