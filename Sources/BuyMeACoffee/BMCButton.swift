@@ -43,7 +43,7 @@ public class BMCButton: UIButton {
         }
     }
     
-    convenience init(configuration: Configuration) {
+    public convenience init(configuration: Configuration) {
         self.init(type: .custom)
         
         self.configuration = configuration
