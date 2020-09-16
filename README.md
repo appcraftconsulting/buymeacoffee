@@ -1,3 +1,5 @@
+![Swift](https://github.com/appcraftstudio/buymeacoffee/workflows/Swift/badge.svg)
+
 # A supporter is  worth a thousand  followers. 
 
 ### [Buy Me a Coffee](https://www.buymeacoffee.com) is a modern creator platform. It takes two minutes to start your page and has all the features that you need to build your creative business.
@@ -9,7 +11,13 @@ Give your audience a friendly way to thank you.
 Earn recurring revenue by offering a monthly or yearly membership.
 
 **Sell Extras :sparkles:**  
-A new, creative way to offer Zoom calls, art commissions, anything.
+A new, creative way to offer Zoom calls, art commissions, anything.  
+
+<p align="center">
+<br>
+<img src="https://github.com/appcraftstudio/buymeacoffee/raw/master/Images/screenshot-buymeacoffee-home.png" width="320">
+<img src="https://github.com/appcraftstudio/buymeacoffee/raw/master/Images/screenshot-buymeacoffee-apple-pay.png" width="320">
+</p>
 
 ## Features
 
@@ -35,14 +43,11 @@ These are the two App Store Review Guidelines articles you have to know before u
 
 ## Implement Buy Me a Coffee
 
-`BMCManager` is a singleton that is used to configure both username and presenting view controller. The username is the one you've chosen on www.buymeacoffee.com, and the presenting view controller is the one that will be used to present donation flow when user tap on the `BMCButton`.
-
-
 1. Import the BuyMeACoffee framework in your `UIApplicationDelegate`:
 ```swift
 import BuyMeACoffee
 ```
-2. Configure the `BMCManager` shared instance, typically in your app's `application:didFinishLaunchingWithOptions:` method:
+2. Configure the `BMCManager` shared instance with the username you've chosen on www.buymeacoffee.com, typically in your app's `application:didFinishLaunchingWithOptions:` method:
 ```swift
 BMCManager.shared.configure(username: "appcraftstudio")
 ```
@@ -60,9 +65,12 @@ button.configuraton = .init(color: .orange, font: .cookie)
 ```
 [<img src="https://github.com/appcraftstudio/buymeacoffee/raw/master/Images/snapshot-bmc-button.png">](https://www.buymeacoffee.com/appcraftstudio)
 
-## Configure In-App Purchase (optional)
+## (Optional) Configure In-App Purchase
 
-:warning: In-App Purchase configuration may be required for App Store Review.
+Depending the legal receiver of the gift configured on Buy Me a Coffee, App Store reviewers can ask for In-App Purchase implementation.  
+If the following In-App Purchase if configured for your application, it will be displayed as primary flow when user tap on the `BMCButton`.
+
+**If the framework can't retrieve In-App Purchase informations, the web flow will be used as fallback.**
 
 ### App Store Connect
 
@@ -75,13 +83,10 @@ Go to [App Store Connect](https://appstoreconnect.apple.com), search for the *In
 | **Product ID** | `your.app.bundle.identifier`*.buymeacoffee* |
 | **Cleared for Sale** | :white_check_mark: |
 | **Price** | Tier 4 |
-|||
 | **Display Name** | *Buy Me a Coffee* |
 | **Description** | *Hey there! You can now buy me a coffee!*
-|||
-| **Promotional image** | [download here](https://github.com/appcraftstudio/buymeacoffee/raw/master/Images/in-app-purchase-promotional-image.jpg) |
-|||
-| **Review Screenshot** | [download here](https://github.com/appcraftstudio/buymeacoffee/raw/master/Images/in-app-purchase-promotional-image.jpg) |
+| **Promotional Image** | [download here](https://github.com/appcraftstudio/buymeacoffee/raw/master/Images/%20in-app-purchase-promotional-image.jpg) |
+| **Review Screenshot** | [download here](https://github.com/appcraftstudio/buymeacoffee/raw/master/Images/%20in-app-purchase-review-screenshot.png) |
 | **Review Notes** | *Buy Me a Coffee enable customers to “tip” digital content providers in the app.* |
 
 ### Capabilities
@@ -91,7 +96,9 @@ Go to [App Store Connect](https://appstoreconnect.apple.com), search for the *In
 3. Go to the *Signing & Capabilities* tab.
 4. Add the *In-App Purchase* capability.
 
-![Xcode capabilities](Images/screenshot-xcode-capabilities.png)
+<p align="center">
+<img src="https://github.com/appcraftstudio/buymeacoffee/raw/master/Images/screenshot-xcode-capabilities.png" width="600">
+</p>
 
 ## Installation
 
@@ -111,7 +118,7 @@ Then run a `pod install` inside your terminal, or from CocoaPods.app.
 2. Paste the project URL: https://github.com/appcraftstudio/buymeacoffee.git
 3. Click on next and select the project target
 
-![Swift Package Manager](Images/screenshot-xcode-spm.png)
+![Swift Package Manager](https://github.com/appcraftstudio/buymeacoffee/raw/master/Images/screenshot-xcode-spm.png)
 
 ---
 

@@ -5,9 +5,8 @@
 //  Copyright © 2020 App Craft Studio. All rights reserved.
 //
 
-#if !os(macOS)
+#if canImport(UIKit)
 import UIKit
-#endif
 
 public enum BMCColor: String, CaseIterable {
     case orange
@@ -35,3 +34,4 @@ public enum BMCColor: String, CaseIterable {
         }
     }
 }
+#endif

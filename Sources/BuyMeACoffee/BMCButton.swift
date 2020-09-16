@@ -5,9 +5,8 @@
 //  Copyright © 2020 App Craft Studio. All rights reserved.
 //
 
-#if !os(macOS)
+#if canImport(UIKit)
 import UIKit
-#endif
 
 @IBDesignable
 public class BMCButton: UIButton {
@@ -121,3 +120,4 @@ public class BMCButton: UIButton {
         }
     }
 }
+#endif

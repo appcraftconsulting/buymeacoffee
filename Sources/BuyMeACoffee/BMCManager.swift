@@ -5,10 +5,8 @@
 //  Copyright © 2020 App Craft Studio. All rights reserved.
 //
 
-#if !os(macOS)
+#if canImport(UIKit)
 import UIKit
-#endif
-
 import SafariServices
 import StoreKit
 
@@ -170,3 +168,4 @@ public final class BMCManager: NSObject, SKProductsRequestDelegate, SKPaymentTra
         true
     }
 }
+#endif
