@@ -19,7 +19,7 @@ public enum BMCColor: String, CaseIterable {
     case red
     case pink
     
-    public static let `default`: Self = .orange
+    public static let `default`: Self = .yellow
     
     internal var background: UIColor? {
         UIColor(named: rawValue, in: .module, compatibleWith: nil)
