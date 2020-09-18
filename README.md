@@ -66,7 +66,7 @@ button.configuraton = .init(color: .orange, font: .cookie)
 
 <p align="center">
 <br>
-<img src="https://github.com/appcraftstudio/buymeacoffee/raw/master/Images/snapshot-bmc-button.png" width="200">
+<img src="https://github.com/appcraftstudio/buymeacoffee/raw/master/Images/snapshot-bmc-button.png" width="300">
 </p>
 
 ## (Optional) Configure In-App Purchase
@@ -89,7 +89,7 @@ Go to [App Store Connect](https://appstoreconnect.apple.com), search for the *In
 | **Price** | Tier 4 |
 | **Display Name** | *Buy Me a Coffee* |
 | **Description** | *Hey there! You can now buy me a coffee!*
-| **Promotional Image** | [download here](https://github.com/appcraftstudio/buymeacoffee/raw/master/Images/%20in-app-purchase-promotional-image) |
+| **Promotional Image** | [download here](https://github.com/appcraftstudio/buymeacoffee/raw/master/Images/%20in-app-purchase-promotional-image.jpg) |
 | **Review Screenshot** | [download here](https://github.com/appcraftstudio/buymeacoffee/raw/master/Images/%20in-app-purchase-review-screenshot.png) |
 | **Review Notes** | *Buy Me a Coffee enable customers to “tip” digital content providers in the app.* |
 
