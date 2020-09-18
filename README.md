@@ -63,7 +63,11 @@ BMCManager.shared.thankYouMessage = "Thank you for supporting 🎉 App Craft Stu
 let button = BMCButton(configuration: .default)
 button.configuraton = .init(color: .orange, font: .cookie)
 ```
-[<img src="https://github.com/appcraftstudio/buymeacoffee/raw/master/Images/snapshot-bmc-button.png">](https://www.buymeacoffee.com/appcraftstudio)
+
+<p align="center">
+<br>
+<img src="https://github.com/appcraftstudio/buymeacoffee/raw/master/Images/snapshot-bmc-button.png" width="200">
+</p>
 
 ## (Optional) Configure In-App Purchase
 
@@ -123,5 +127,7 @@ Then run a `pod install` inside your terminal, or from CocoaPods.app.
 ---
 
 <a href="https://www.producthunt.com/posts/buy-me-a-coffee-framework-for-ios?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-buy-me-a-coffee-framework-for-ios" target="_blank"><img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=233953&theme=dark" alt="Buy Me a Coffee framework for iOS - Embed Buy Me a Coffee framework in your applications | Product Hunt Embed" style="width: 250px; height: 54px;" width="250px" height="54px" /></a>
+
+<a href="https://www.buymeacoffee.com/appcraftstudio" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a>
 
 Copyright © 2020 App Craft Studio. All rights reserved.
