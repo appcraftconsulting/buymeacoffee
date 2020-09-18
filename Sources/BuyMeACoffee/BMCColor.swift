@@ -33,5 +33,15 @@ public enum BMCColor: String, CaseIterable {
             return .black
         }
     }
+    
+    internal var cup: UIImage? {
+        switch self {
+        case .yellow:
+            return UIImage(named: "cup-white", in: .module, compatibleWith: nil)
+        default:
+            return UIImage(named: "cup-yellow", in: .module, compatibleWith: nil)
+        }
+    }
+
 }
 #endif

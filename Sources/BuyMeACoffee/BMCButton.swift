@@ -82,8 +82,6 @@ public class BMCButton: UIButton {
         imageEdgeInsets = .init(top: 0, left: -6, bottom: 0, right: 6)
         
         imageView?.contentMode = .scaleAspectFit
-        let image = UIImage(named: "cup", in: .module, compatibleWith: nil)
-        setImage(image, for: .normal)
         
         registerFonts()
         
@@ -97,6 +95,7 @@ public class BMCButton: UIButton {
     private func configure(with configuration: Configuration) {
         titleLabel?.font = configuration.font.value
         setTitleColor(configuration.color.title, for: .normal)
+        setImage(configuration.color.cup, for: .normal)
         backgroundColor = configuration.color.background
         
         var title = configuration.title
