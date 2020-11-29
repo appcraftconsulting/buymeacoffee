@@ -10,4 +10,6 @@ import Foundation
 
 internal extension Bundle {
     static let module = Bundle(for: BMCManager.self)
+    @available(iOS 13.0, *)
+    static let moduleUI = Bundle(for: BMCManagerUI.self)
 }
