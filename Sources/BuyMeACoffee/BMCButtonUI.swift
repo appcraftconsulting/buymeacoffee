@@ -74,7 +74,8 @@ public struct BMCButtonUI: View {
         VStack {
             Button(action: {
                 BMCManagerUI.shared.start()
-                SKPayment(product: BMCManagerUI.shared.product!)
+                let payment = SKPayment(product: BMCManagerUI.shared.product!)
+                SKPaymentQueue.default().add(payment)
             }) {
                 self.image.padding(EdgeInsets(top: 0, leading: -6, bottom: 0, trailing: 6))
                 Text(self.title!).padding(EdgeInsets(top: 0, leading: 6, bottom: 0, trailing: -6)).font(configuration.font.value).foregroundColor(configuration.color.title)
