@@ -126,7 +126,7 @@ public final class BMCManagerUI: NSObject, SKProductsRequestDelegate, SKPaymentT
         let message = thankYouMessage ?? "Thank you for supporting 🎉"
         let alertController = UIAlertController(title: "Buy Me a Coffee", message: message, preferredStyle: .alert)
     
-        alertController.view.tintColor = BMCColor.default.background
+        alertController.view.tintColor = BMCColor.default.background as? UIColor
     }
     
     // MARK: - SKProductsRequestDelegate

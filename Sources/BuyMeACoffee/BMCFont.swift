@@ -7,6 +7,15 @@
 
 #if canImport(UIKit)
 import UIKit
+#if canImport(SwiftUI)
+import SwiftUI
+#endif
+
+protocol CustomFont { }
+
+extension UIFont: CustomFont { }
+@available(iOS 13.0, OSX 10.15, *)
+extension Font: CustomFont { }
 
 public enum BMCFont: String, CaseIterable {
     case cookie
@@ -15,14 +24,26 @@ public enum BMCFont: String, CaseIterable {
     
     public static let `default`: Self = .cookie
     
-    internal var value: UIFont? {
+    internal var value: CustomFont? {
         switch self {
         case .cookie:
-            return UIFont(name: rawValue.capitalized, size: 26)
+            if #available(iOS 13.0, OSX 10.15, *) {
+                return Font.custom(rawValue.capitalized, size: 26)
+            } else {
+                return UIFont(name: rawValue.capitalized, size: 26)
+            }
         case .lato:
-            return UIFont(name: rawValue.capitalized, size: 20)
+            if #available(iOS 13.0, OSX 10.15, *) {
+                return Font.custom(rawValue.capitalized, size: 20)
+            } else {
+                return UIFont(name: rawValue.capitalized, size: 20)
+            }
         case .arial:
-            return UIFont(name: rawValue.capitalized, size: 20)
+            if #available(iOS 13.0, OSX 10.15, *) {
+                return Font.custom(rawValue.capitalized, size: 20)
+            } else {
+                return UIFont(name: rawValue.capitalized, size: 20)
+            }
         }
     }
 }

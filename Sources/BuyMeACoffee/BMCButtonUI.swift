@@ -14,11 +14,11 @@ public struct BMCButtonUI: View {
     @State private var presentFallback = false
 
     public struct Configuration {
-        let color: BMCColorUI
-        let font: BMCFontUI
+        let color: BMCColor
+        let font: BMCFont
         let title: String
         
-        public init(color: BMCColorUI, font: BMCFontUI, title: String = "Buy me a coffee") {
+        public init(color: BMCColor, font: BMCFont, title: String = "Buy me a coffee") {
             self.color = color
             self.font = font
             self.title = title
@@ -34,9 +34,9 @@ public struct BMCButtonUI: View {
     }
     
     private mutating func configure(with configuration: Configuration) {
-        image = configuration.color.cup!
+        image = configuration.color.cup! as? Image
         
-        backgroundColor = configuration.color.background!
+        backgroundColor = configuration.color.background! as? Color
         
         var title = configuration.title
         if let product = BMCManagerUI.shared.product {
@@ -47,8 +47,8 @@ public struct BMCButtonUI: View {
         }
     }
     
-    let color: BMCColorUI?
-    let font: BMCFontUI?
+    let color: BMCColor?
+    let font: BMCFont?
     let title: String?
     var image: Image?
     var backgroundColor: Color?
@@ -59,11 +59,11 @@ public struct BMCButtonUI: View {
         return numberFormatter
     }()
 
-    public init(color: BMCColorUI, font: BMCFontUI, title: String = "Buy me a coffee") {
+    public init(color: BMCColor, font: BMCFont, title: String = "Buy me a coffee") {
         self.color = color
         self.font = font
         self.title = title
-        self.image = configuration.color.cup
+        self.image = configuration.color.cup as? Image
 
         configure(with: configuration)
 
@@ -78,7 +78,7 @@ public struct BMCButtonUI: View {
                 SKPaymentQueue.default().add(payment)
             }) {
                 self.image.padding(EdgeInsets(top: 0, leading: -6, bottom: 0, trailing: 6))
-                Text(self.title!).padding(EdgeInsets(top: 0, leading: 6, bottom: 0, trailing: -6)).font(configuration.font.value).foregroundColor(configuration.color.title)
+                Text(self.title!).padding(EdgeInsets(top: 0, leading: 6, bottom: 0, trailing: -6)).font(configuration.font.value as? Font).foregroundColor(configuration.color.title as? Color)
             }.padding(EdgeInsets(top: 8, leading: 12, bottom: 8, trailing: 12)).shadow(color: Color.black, radius: 2, x: 4, y: 4).background(self.backgroundColor)
         }
     }

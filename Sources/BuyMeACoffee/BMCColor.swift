@@ -7,6 +7,21 @@
 
 #if canImport(UIKit)
 import UIKit
+#if canImport(SwiftUI)
+import SwiftUI
+#endif
+
+protocol CustomColor { }
+
+extension UIColor: CustomColor { }
+@available(iOS 13.0, OSX 10.15, *)
+extension Color: CustomColor { }
+
+protocol CustomImage { }
+
+extension UIImage: CustomImage { }
+@available(iOS 13.0, OSX 10.15, *)
+extension Image: CustomImage { }
 
 public enum BMCColor: String, CaseIterable {
     case orange
@@ -21,27 +36,46 @@ public enum BMCColor: String, CaseIterable {
     
     public static let `default`: Self = .yellow
     
-    internal var background: UIColor? {
-        UIColor(named: rawValue, in: .module, compatibleWith: nil)
+    internal var background: CustomColor? {
+        if #available(iOS 13.0, OSX 10.15, *) {
+            return Color(UIColor(named: rawValue, in: .module, compatibleWith: nil)!)
+        } else {
+            return UIColor(named: rawValue, in: .module, compatibleWith: nil)
+        }
     }
     
-    internal var title: UIColor {
+    internal var title: CustomColor {
         switch self {
         case .orange, .purple, .black, .blue, .green, .red, .pink:
-            return .white
+            if #available(iOS 13.0, OSX 10.15, *) {
+                return Color.white
+            } else {
+                return UIColor.white
+            }
         case .yellow, .white:
-            return .black
+            if #available(iOS 13.0, OSX 10.15, *) {
+                return Color.black
+            } else {
+                return UIColor.black
+            }
         }
     }
     
-    internal var cup: UIImage? {
+    internal var cup: CustomImage? {
         switch self {
         case .yellow:
-            return UIImage(named: "cup-white", in: .module, compatibleWith: nil)
+            if #available(iOS 13.0, OSX 10.15, *) {
+                return Image(uiImage: UIImage(named: "cup-white", in: .moduleUI, compatibleWith: nil)!)
+            } else {
+                return UIImage(named: "cup-white", in: .module, compatibleWith: nil)
+            }
         default:
-            return UIImage(named: "cup-yellow", in: .module, compatibleWith: nil)
+            if #available(iOS 13.0, OSX 10.15, *) {
+                return Image(uiImage: UIImage(named: "cup-yellow", in: .moduleUI, compatibleWith: nil)!)
+            } else {
+                return UIImage(named: "cup-yellow", in: .module, compatibleWith: nil)
+            }
         }
     }
-
 }
 #endif

@@ -39,7 +39,7 @@ public final class BMCManager: NSObject, SKProductsRequestDelegate, SKPaymentTra
         }
         
         activityIndicatorView.translatesAutoresizingMaskIntoConstraints = false
-        activityIndicatorView.color = BMCColor.default.background
+        activityIndicatorView.color = BMCColor.default.background as? UIColor
         activityIndicatorView.startAnimating()
         
         let viewController = UIViewController()
@@ -114,7 +114,7 @@ public final class BMCManager: NSObject, SKProductsRequestDelegate, SKPaymentTra
         }
         
         let viewController = SFSafariViewController(url: url)
-        viewController.preferredControlTintColor = BMCColor.default.background
+        viewController.preferredControlTintColor = BMCColor.default.background as? UIColor
         viewController.modalPresentationStyle = .formSheet
         presentingViewController?.present(viewController, animated: true)
     }
@@ -127,7 +127,7 @@ public final class BMCManager: NSObject, SKProductsRequestDelegate, SKPaymentTra
             self?.loadingViewController.dismiss(animated: true)
         }))
         
-        alertController.view.tintColor = BMCColor.default.background
+        alertController.view.tintColor = BMCColor.default.background as? UIColor
         loadingViewController.present(alertController, animated: true)
     }
     
