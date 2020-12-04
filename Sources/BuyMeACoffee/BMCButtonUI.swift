@@ -79,7 +79,7 @@ public struct BMCButtonUI: View {
             }) {
                 self.image.padding(EdgeInsets(top: 0, leading: -6, bottom: 0, trailing: 6))
                 Text(self.title!).padding(EdgeInsets(top: 0, leading: 6, bottom: 0, trailing: -6)).font(configuration.font.value as? Font).foregroundColor(configuration.color.title as? Color)
-            }.padding(EdgeInsets(top: 8, leading: 12, bottom: 8, trailing: 12)).shadow(color: Color.black, radius: 2, x: 4, y: 4).background(self.backgroundColor)
+            }.padding(EdgeInsets(top: 8, leading: 12, bottom: 8, trailing: 12)).background(self.backgroundColor).cornerRadius(5).shadow(color: Color.black, radius: 2, x: 4, y: 4)
         }
     }
     
