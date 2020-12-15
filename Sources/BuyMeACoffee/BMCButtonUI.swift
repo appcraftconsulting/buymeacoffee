@@ -34,7 +34,7 @@ public struct BMCButtonUI: View {
     }
     
     private mutating func configure(with configuration: Configuration) {
-        image = configuration.color.cup! as? Image
+        image = Image(uiImage: configuration.color.cup!)
         
         backgroundColor = configuration.color.background!
         
@@ -63,7 +63,7 @@ public struct BMCButtonUI: View {
         self.color = color
         self.font = font
         self.title = title
-        self.image = configuration.color.cup as? Image
+        self.image = Image(uiImage: configuration.color.cup!)
 
         configure(with: configuration)
 

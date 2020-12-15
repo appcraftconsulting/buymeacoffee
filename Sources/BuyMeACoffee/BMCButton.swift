@@ -95,7 +95,7 @@ public class BMCButton: UIButton {
     private func configure(with configuration: Configuration) {
         titleLabel?.font = configuration.font.value
         setTitleColor(configuration.color.title, for: .normal)
-        setImage(configuration.color.cup as? UIImage, for: .normal)
+        setImage(configuration.color.cup, for: .normal)
         backgroundColor = configuration.color.background
         
         var title = configuration.title

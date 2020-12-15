@@ -11,12 +11,6 @@ import UIKit
 import SwiftUI
 #endif
 
-protocol CustomImage { }
-
-extension UIImage: CustomImage { }
-@available(iOS 13.0, OSX 10.15, *)
-extension Image: CustomImage { }
-
 public enum BMCColor: String, CaseIterable {
     case orange
     case yellow
@@ -43,20 +37,12 @@ public enum BMCColor: String, CaseIterable {
         }
     }
     
-    internal var cup: CustomImage? {
+    internal var cup: UIImage? {
         switch self {
         case .yellow:
-            if #available(iOS 13.0, OSX 10.15, *) {
-                return Image(uiImage: UIImage(named: "cup-white", in: .moduleUI, compatibleWith: nil)!)
-            } else {
-                return UIImage(named: "cup-white", in: .module, compatibleWith: nil)
-            }
+            return UIImage(named: "cup-white", in: .module, compatibleWith: nil)
         default:
-            if #available(iOS 13.0, OSX 10.15, *) {
-                return Image(uiImage: UIImage(named: "cup-yellow", in: .moduleUI, compatibleWith: nil)!)
-            } else {
-                return UIImage(named: "cup-yellow", in: .module, compatibleWith: nil)
-            }
+            return UIImage(named: "cup-yellow", in: .module, compatibleWith: nil)
         }
     }
 }
