@@ -78,8 +78,12 @@ public struct BMCButtonUI: View {
                 SKPaymentQueue.default().add(payment)
             }) {
                 self.image.padding(EdgeInsets(top: 0, leading: -6, bottom: 0, trailing: 6))
-                Text(self.title!).padding(EdgeInsets(top: 0, leading: 6, bottom: 0, trailing: -6)).font(configuration.font.value as? Font).foregroundColor(Color.init(configuration.color.title))
+                Text(self.title!).padding(EdgeInsets(top: 0, leading: 6, bottom: 0, trailing: -6)).font(Font.custom(configuration.font.rawValue.capitalized, size: configuration.font.value!.pointSize)).foregroundColor(Color.init(configuration.color.title))
             }.padding(EdgeInsets(top: 8, leading: 12, bottom: 8, trailing: 12)).background(Color.init(self.backgroundColor!)).cornerRadius(5).shadow(color: Color.black, radius: 2, x: 4, y: 4)
+            
+            
+            
+            
         }
     }
     
