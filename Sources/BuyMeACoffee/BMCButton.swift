@@ -94,9 +94,9 @@ public class BMCButton: UIButton {
     
     private func configure(with configuration: Configuration) {
         titleLabel?.font = configuration.font.value as? UIFont
-        setTitleColor(configuration.color.title as? UIColor, for: .normal)
+        setTitleColor(configuration.color.title, for: .normal)
         setImage(configuration.color.cup as? UIImage, for: .normal)
-        backgroundColor = configuration.color.background as? UIColor
+        backgroundColor = configuration.color.background
         
         var title = configuration.title
         if let product = BMCManager.shared.product {

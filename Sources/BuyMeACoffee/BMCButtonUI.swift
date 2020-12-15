@@ -36,7 +36,7 @@ public struct BMCButtonUI: View {
     private mutating func configure(with configuration: Configuration) {
         image = configuration.color.cup! as? Image
         
-        backgroundColor = configuration.color.background! as? Color
+        backgroundColor = configuration.color.background!
         
         var title = configuration.title
         if let product = BMCManagerUI.shared.product {
@@ -51,7 +51,7 @@ public struct BMCButtonUI: View {
     let font: BMCFont?
     let title: String?
     var image: Image?
-    var backgroundColor: Color?
+    var backgroundColor: UIColor?
     
     private lazy var numberFormatter: NumberFormatter = {
         let numberFormatter = NumberFormatter()
@@ -78,8 +78,8 @@ public struct BMCButtonUI: View {
                 SKPaymentQueue.default().add(payment)
             }) {
                 self.image.padding(EdgeInsets(top: 0, leading: -6, bottom: 0, trailing: 6))
-                Text(self.title!).padding(EdgeInsets(top: 0, leading: 6, bottom: 0, trailing: -6)).font(configuration.font.value as? Font).foregroundColor(configuration.color.title as? Color)
-            }.padding(EdgeInsets(top: 8, leading: 12, bottom: 8, trailing: 12)).background(self.backgroundColor).cornerRadius(5).shadow(color: Color.black, radius: 2, x: 4, y: 4)
+                Text(self.title!).padding(EdgeInsets(top: 0, leading: 6, bottom: 0, trailing: -6)).font(configuration.font.value as? Font).foregroundColor(Color.init(configuration.color.title))
+            }.padding(EdgeInsets(top: 8, leading: 12, bottom: 8, trailing: 12)).background(Color.init(self.backgroundColor!)).cornerRadius(5).shadow(color: Color.black, radius: 2, x: 4, y: 4)
         }
     }
     

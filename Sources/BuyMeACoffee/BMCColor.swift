@@ -11,12 +11,6 @@ import UIKit
 import SwiftUI
 #endif
 
-protocol CustomColor { }
-
-extension UIColor: CustomColor { }
-@available(iOS 13.0, OSX 10.15, *)
-extension Color: CustomColor { }
-
 protocol CustomImage { }
 
 extension UIImage: CustomImage { }
@@ -36,28 +30,16 @@ public enum BMCColor: String, CaseIterable {
     
     public static let `default`: Self = .yellow
     
-    internal var background: CustomColor? {
-        if #available(iOS 13.0, OSX 10.15, *) {
-            return Color(UIColor(named: rawValue, in: .module, compatibleWith: nil)!)
-        } else {
-            return UIColor(named: rawValue, in: .module, compatibleWith: nil)
-        }
+    internal var background: UIColor? {
+        return UIColor(named: rawValue, in: .module, compatibleWith: nil)
     }
     
-    internal var title: CustomColor {
+    internal var title: UIColor {
         switch self {
         case .orange, .purple, .black, .blue, .green, .red, .pink:
-            if #available(iOS 13.0, OSX 10.15, *) {
-                return Color.white
-            } else {
-                return UIColor.white
-            }
+            return UIColor.white
         case .yellow, .white:
-            if #available(iOS 13.0, OSX 10.15, *) {
-                return Color.black
-            } else {
-                return UIColor.black
-            }
+            return UIColor.black
         }
     }
     
