@@ -42,5 +42,6 @@ public enum BMCColor: String, CaseIterable {
             return UIImage(named: "cup-yellow", in: .module, compatibleWith: nil)
         }
     }
+
 }
 #endif
