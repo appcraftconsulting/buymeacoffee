@@ -39,7 +39,7 @@ public struct BMCButtonUI: View {
         backgroundColor = configuration.color.background!
         
         var title = configuration.title
-        if let product = BMCManagerUI.shared.product {
+        if let product = BMCManager.shared.product {
             numberFormatter.locale = product.priceLocale
             if let price = numberFormatter.string(from: product.price) {
                 title.append(" (\(price))")
@@ -73,17 +73,13 @@ public struct BMCButtonUI: View {
     public var body: some View {
         VStack {
             Button(action: {
-                BMCManagerUI.shared.start()
-                let payment = SKPayment(product: BMCManagerUI.shared.product!)
+                BMCManager.shared.start()
+                let payment = SKPayment(product: BMCManager.shared.product!)
                 SKPaymentQueue.default().add(payment)
             }) {
                 self.image.padding(EdgeInsets(top: 0, leading: -6, bottom: 0, trailing: 6))
                 Text(self.title!).padding(EdgeInsets(top: 0, leading: 6, bottom: 0, trailing: -6)).font(Font.custom(configuration.font.rawValue.capitalized, size: configuration.font.value!.pointSize)).foregroundColor(Color.init(configuration.color.title))
             }.padding(EdgeInsets(top: 8, leading: 12, bottom: 8, trailing: 12)).background(Color.init(self.backgroundColor!)).cornerRadius(5).shadow(color: Color.black, radius: 2, x: 4, y: 4)
-            
-            
-            
-            
         }
     }
     
