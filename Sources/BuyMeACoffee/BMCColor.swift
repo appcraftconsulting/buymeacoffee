@@ -25,15 +25,15 @@ public enum BMCColor: String, CaseIterable {
     public static let `default`: Self = .yellow
     
     internal var background: UIColor? {
-        return UIColor(named: rawValue, in: .module, compatibleWith: nil)
+        UIColor(named: rawValue, in: .module, compatibleWith: nil)
     }
     
     internal var title: UIColor {
         switch self {
         case .orange, .purple, .black, .blue, .green, .red, .pink:
-            return UIColor.white
+            return .white
         case .yellow, .white:
-            return UIColor.black
+            return .black
         }
     }
     
