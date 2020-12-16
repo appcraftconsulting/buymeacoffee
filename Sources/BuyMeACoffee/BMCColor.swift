@@ -7,9 +7,6 @@
 
 #if canImport(UIKit)
 import UIKit
-#if canImport(SwiftUI)
-import SwiftUI
-#endif
 
 public enum BMCColor: String, CaseIterable {
     case orange
