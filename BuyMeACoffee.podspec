@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name                  = 'BuyMeACoffee'
-  spec.version               = '1.0.4'
+  spec.version               = '1.0.5'
   spec.license               = { :type => "MIT", :file => "LICENSE" }
                                
   spec.homepage              = 'https://www.buymeacoffee.com'
