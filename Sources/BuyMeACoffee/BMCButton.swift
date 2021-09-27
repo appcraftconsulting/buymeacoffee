@@ -30,11 +30,7 @@ public class BMCButton: UIButton {
         return numberFormatter
     }()
     
-    public var configuration: Configuration = .default {
-        didSet {
-            configure(with: configuration)
-        }
-    }
+    private var _configuration: Configuration = .default
     
     public override var isHighlighted: Bool {
         didSet {
@@ -45,7 +41,7 @@ public class BMCButton: UIButton {
     public convenience init(configuration: Configuration) {
         self.init(type: .custom)
         
-        self.configuration = configuration
+        self._configuration = configuration
     }
     
     override init(frame: CGRect) {
@@ -66,6 +62,25 @@ public class BMCButton: UIButton {
         super.prepareForInterfaceBuilder()
         
         setup()
+    }
+    
+    // MARK: - Public functions
+    
+    public func configure(with configuration: Configuration) {
+        titleLabel?.font = configuration.font.value
+        setTitleColor(configuration.color.title, for: .normal)
+        setImage(configuration.color.cup, for: .normal)
+        backgroundColor = configuration.color.background
+        
+        var title = configuration.title
+        if let product = BMCManager.shared.product {
+            numberFormatter.locale = product.priceLocale
+            if let price = numberFormatter.string(from: product.price) {
+                title.append(" (\(price))")
+            }
+        }
+
+        setTitle(title, for: .normal)
     }
     
     // MARK: - Private functions
@@ -89,24 +104,7 @@ public class BMCButton: UIButton {
         
         addTarget(BMCManager.shared, action: #selector(BMCManager.shared.start), for: .touchUpInside)
         
-        configure(with: configuration)
-    }
-    
-    private func configure(with configuration: Configuration) {
-        titleLabel?.font = configuration.font.value
-        setTitleColor(configuration.color.title, for: .normal)
-        setImage(configuration.color.cup, for: .normal)
-        backgroundColor = configuration.color.background
-        
-        var title = configuration.title
-        if let product = BMCManager.shared.product {
-            numberFormatter.locale = product.priceLocale
-            if let price = numberFormatter.string(from: product.price) {
-                title.append(" (\(price))")
-            }
-        }
-
-        setTitle(title, for: .normal)
+        configure(with: _configuration)
     }
     
     private func registerFonts() {

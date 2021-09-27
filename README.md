@@ -60,8 +60,10 @@ BMCManager.shared.thankYouMessage = "Thank you for supporting 🎉 App Craft Stu
 4. Add a `BMCButton` to your storyboard, XIB file, or instantiate it programmatically. To add the button to your storyboard or XIB file, add a View and set its custom class to `BMCButton`.
 5. **Optional**: If you want to customize the button, do the following:
 ```swift
-let button = BMCButton(configuration: .default)
-button.configuraton = .init(color: .orange, font: .cookie)
+let configuration = BMCButton.Configuration(color: .orange, font: .cookie)
+let button = BMCButton(configuration: configuration)
+// or set the burtton configuration later
+button.configure(with: configuration)
 ```
 
 <p align="center">
