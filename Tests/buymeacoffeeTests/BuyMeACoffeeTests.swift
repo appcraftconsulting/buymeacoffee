@@ -28,6 +28,19 @@ final class BuyMeACoffeeTests: XCTestCase {
             XCTFail()
         }
     }
+    
+    @available(iOS 13, *)
+    func testBMCButtonUIViewRepresentable() {
+        let button = BMCButtonUIViewRepresentable(username: "codedbydan",
+                                                  configuration: BMCButton.Configuration(color: .purple, font: .lato),
+                                                  presentingViewController: nil)
+        
+        XCTAssertNotNil(button)
+        XCTAssertEqual(button.username, "codedbydan")
+        XCTAssertEqual(button.configuration?.color, .purple)
+        XCTAssertEqual(button.configuration?.font, .lato)
+        XCTAssertNil(button.presentingViewController)
+    }
 
     static var allTests = [
         ("snapshot button", testSnapshotButton),
